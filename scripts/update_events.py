@@ -87,6 +87,25 @@ def cmom():
             })
     return out
 
+
+
+def nypl():
+    url = "https://www.nypl.org/events/calendar?audience=children"
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    out = []
+    for item in soup.select("article"):
+        title = item.get_text(strip=True)
+
+        out.append({
+            "title": title,
+            "source": "NYPL",
+            "url": url
+        })
+    return out
+
+
 def bpl():
     url="https://www.bklynlibrary.org/event-series/events-for-youth-and-family"
     r=requests.get(url,headers=HEADERS,timeout=25); r.raise_for_status()
