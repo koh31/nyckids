@@ -102,8 +102,8 @@ def nypl():
         for row in soup.select("table tr"):
             text = row.get_text(" ", strip=True)
 
-    if not any(x in text.lower() for x in ["child", "family", "toddler", "baby"]):
-    continue
+            if "Children" not in text:
+                continue
 
             out.append({
                 "title": text[:80],
@@ -112,7 +112,7 @@ def nypl():
             })
 
     return out
-
+    
 
 def bpl():
     url="https://www.bklynlibrary.org/event-series/events-for-youth-and-family"
