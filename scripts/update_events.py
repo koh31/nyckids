@@ -159,5 +159,8 @@ def is_kids_event(text: str) -> bool:
 
     return any(x in t for x in include)
 
+if not is_kids_event(text):
+    continue
+
 if __name__=="__main__":
     main()
