@@ -93,11 +93,9 @@ def nypl():
     url = "https://www.nypl.org/events/calendar?audience=children"
     r = requests.get(url)
     soup = BeautifulSoup(r.text, "html.parser")
-
     out = []
     for item in soup.select("article"):
         title = item.get_text(strip=True)
-
         out.append({
             "title": title,
             "source": "NYPL",
