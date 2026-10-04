@@ -162,5 +162,24 @@ def is_kids_event(text: str) -> bool:
 if not is_kids_event(text):
     continue
 
+def score_event(e):
+    score = 0
+
+    if e["price_type"] == "free":
+        score += 2
+
+    if "museum" in e["source"].lower():
+        score += 2
+
+    if e["age_group"] in ["0-5", "6-12"]:
+        score += 1
+
+    if "story" in e["title"].lower():
+        score += 1
+
+    return score
+
+events = sorted(events, key=lambda e: (-score_event(e), e["date"]))
+
 if __name__=="__main__":
     main()
