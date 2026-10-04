@@ -140,5 +140,24 @@ def main():
     DATA.write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding="utf-8")
     print(f"Wrote {len(payload['events'])} events")
 
+def is_kids_event(text: str) -> bool:
+    t = text.lower()
+
+    include = [
+        "kids", "children", "family", "toddler",
+        "storytime", "story time", "baby",
+        "parent", "family friendly"
+    ]
+
+    exclude = [
+        "21+", "adult", "networking", "business",
+        "conference", "crypto", "dating"
+    ]
+
+    if any(x in t for x in exclude):
+        return False
+
+    return any(x in t for x in include)
+
 if __name__=="__main__":
     main()
