@@ -89,18 +89,28 @@ def cmom():
 
 
 
+
 def nypl():
-    url = "https://www.nypl.org/events/calendar?audience=children"
-    r = requests.get(url)
-    soup = BeautifulSoup(r.text, "html.parser")
     out = []
-    for item in soup.select("article"):
-        title = item.get_text(strip=True)
-        out.append({
-            "title": title,
-            "source": "NYPL",
-            "url": url
-        })
+
+    for page in range(0,5):
+        url = f"https://www.nypl.org/events/calendar?page={page}&audience=children"
+
+        r = requests.get(url, headers=HEADERS)
+        soup = BeautifulSoup(r.text, "html.parser")
+
+        for row in soup.select("table tr"):
+            text = row.get_text(" ", strip=True)
+
+    if not any(x in text.lower() for x in ["child", "family", "toddler", "baby"]):
+    continue
+
+            out.append({
+                "title": text[:80],
+                "source": "NYPL",
+                "url": url
+            })
+
     return out
 
 
