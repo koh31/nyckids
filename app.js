@@ -4,8 +4,18 @@ function score(e){
   let s = 0;
   if(e.price_type==="free") s+=2;
   if(e.area==="Manhattan") s+=2;
-  if(e.source && e.source.includes("Parks")) s+=1;
   return s;
+}
+
+function applyFilters(list){
+  const age = document.getElementById("ageFilter").value;
+  const genre = document.getElementById("genreFilter").value;
+
+  return list.filter(e=>{
+    if(age && e.age_group !== age) return false;
+    if(genre && e.genre !== genre) return false;
+    return true;
+  });
 }
 
 function renderCard(e){
@@ -17,25 +27,29 @@ function renderCard(e){
       ${e.date || ""} ・ ${e.area || ""}
     </div>
 
+    <div style="font-size:13px; margin:6px 0;">
+      ${e.ja_desc || ""}
+    </div>
+
     <div>
-      ${e.price_type==="free" ? '<span class="tag">FREE</span>' : ''}
-      <span class="tag">${e.source || ""}</span>
+      <span class="tag">${e.age_group || ""}</span>
+      <span class="tag">${e.genre || ""}</span>
     </div>
 
     <a class="cta" href="${e.url}" target="_blank">
-      🎟️ Get Tickets
+      詳細を見る
     </a>
   </div>
   `;
 }
 
 function render(){
-  // 全イベント
-  document.getElementById("eventsGrid").innerHTML =
-    events.map(renderCard).join("");
+  const filtered = applyFilters(events);
 
-  // おすすめ
-  const top = [...events]
+  document.getElementById("eventsGrid").innerHTML =
+    filtered.map(renderCard).join("");
+
+  const top = [...filtered]
     .sort((a,b)=>score(b)-score(a))
     .slice(0,5);
 
@@ -49,3 +63,6 @@ fetch("./data/events.json")
     events = d.events;
     render();
   });
+
+document.getElementById("ageFilter").addEventListener("change", render);
+document.getElementById("genreFilter").addEventListener("change", render);
