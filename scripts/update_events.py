@@ -46,6 +46,28 @@ def age_group(text: str, default="all-ages"):
         return "6-12","6–12歳"
     return default,"Family"
 
+
+def normalize_area(e):
+    text = (str(e.get("borough","")) + " " + str(e.get("location",""))).lower()
+
+    if "manhattan" in text or "mn" in text:
+        return "Manhattan"
+    if "brooklyn" in text or "bk" in text:
+        return "Brooklyn"
+    if "queens" in text or "qn" in text:
+        return "Queens"
+
+    return None
+
+
+area = normalize_area(e)
+
+if not area:
+    continue
+
+e["area"] = area
+
+
 def cmom():
     urls = [
         "https://cmom.org/events/category/sign-up-workshops/",
@@ -102,8 +124,8 @@ def nypl():
         for row in soup.select("table tr"):
             text = row.get_text(" ", strip=True)
 
-            if "Children" not in text:
-                continue
+        if not any(x in text.lower() for x in ["child", "family", "toddler", "baby"]):
+        continue
 
             out.append({
                 "title": text[:80],
@@ -112,7 +134,92 @@ def nypl():
             })
 
     return out
-    
+
+def lincoln_center():
+    url = "https://www.lincolncenter.org/series/family"
+
+    r = requests.get(url, headers=HEADERS)
+    soup = BeautifulSoup(r.text, "html.parser")
+
+    out = []
+    for card in soup.select("a[href*='/series/family']"):
+        title = card.get_text(strip=True)
+
+        # タイトルが短すぎるものは除外
+        if len(title) < 5:
+            continue
+
+        # 子ども向けフィルタ
+        if not any(x in title.lower() for x in ["family", "kids", "children"]):
+            continue
+
+        link = card.get("href")
+
+        if link and link.startswith("/"):
+            link = "https://www.lincolncenter.org" + link
+
+        if "free" in title.lower():
+            price_type = "free"
+        else:
+            price_type = "paid"
+        
+        out.append({
+            "title": title,
+            "date": "unknown",
+            "borough": "Manhattan",
+            "age_group": "family",
+            "price_type": "paid",
+            "description": title,
+            "source": "Lincoln Center",
+            "url": link
+        })
+
+    return out[:30]
+
+
+def parks():
+    url = "https://data.cityofnewyork.us/resource/w3wp-dpdi.json"
+
+    r = requests.get(url)
+    data = r.json()
+
+    out = []
+
+    for e in data:
+        title = e.get("title","")
+        desc = e.get("description","")
+
+        text = f"{title} {desc}".lower()
+
+        # 子ども向けだけ
+        if not any(x in text for x in ["child","kids","family","youth"]):
+            continue
+
+        area = normalize_area({
+            "borough": e.get("borough",""),
+            "location": e.get("location","")
+        })
+
+        # 👉 Manhattan / Brooklyn / Queensだけ残す
+        if not area:
+            continue
+
+        out.append({
+            "title": title,
+            "date": e.get("starttime",""),
+            "borough": area,
+            "area": area,
+            "age_group": "family",
+            "price_type": "free",
+            "description": desc,
+            "source": "NYC Parks",
+            "url": e.get("link") or ""
+        })
+
+    return out
+
+
+
 
 def bpl():
     url="https://www.bklynlibrary.org/event-series/events-for-youth-and-family"
