@@ -68,6 +68,43 @@ if not area:
 e["area"] = area
 
 
+def enrich_event(e):
+    text = (e.get("title","") + " " + e.get("description","")).lower()
+
+    # 年齢
+    if any(x in text for x in ["toddler","baby"]):
+        age = "Toddler"
+    elif any(x in text for x in ["teen","youth"]):
+        age = "Teens"
+    else:
+        age = "Kids"
+
+    # ジャンル
+    if "music" in text:
+        genre = "Music"
+    elif "art" in text:
+        genre = "Art"
+    elif "park" in text or "outdoor" in text:
+        genre = "Outdoor"
+    else:
+        genre = "Other"
+
+    # 日本語説明（超シンプル）
+    if genre == "Music":
+        ja = "子ども向け音楽イベント"
+    elif genre == "Art":
+        ja = "アート体験イベント"
+    elif genre == "Outdoor":
+        ja = "外遊びイベント"
+    else:
+        ja = "子ども向けイベント"
+
+    e["age_group"] = age
+    e["genre"] = genre
+    e["ja_desc"] = ja
+
+    return e
+
 def cmom():
     urls = [
         "https://cmom.org/events/category/sign-up-workshops/",
@@ -337,3 +374,7 @@ for e in events:
     filtered.append(e)
 
 events = filtered
+
+
+events = [enrich_event(e) for e in events]
+
