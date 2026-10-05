@@ -1,76 +1,50 @@
-/* ===== Base ===== */
 body{
   margin:0;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+  font-family:'Inter',sans-serif;
   background:#0f0f10;
   color:#fff;
 }
 
-/* ===== Layout ===== */
 .wrap{
   max-width:1100px;
   margin:auto;
   padding:24px;
 }
 
-/* ===== Header ===== */
 header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:20px 0;
 }
 
-h1{
-  font-size:28px;
-  font-weight:900;
-  letter-spacing:1px;
-}
+h1{font-weight:900;}
+h2{margin-top:40px;}
 
-/* ===== Sections ===== */
-h2{
-  margin:40px 0 20px;
-  font-size:22px;
-  font-weight:800;
-}
-
-/* ===== Grid ===== */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:20px;
 }
 
-/* ===== Card ===== */
 .card{
   background:#1a1a1d;
   border-radius:16px;
   padding:18px;
-  transition:0.2s;
   border:1px solid #222;
+  transition:0.2s;
 }
 
 .card:hover{
-  transform:translateY(-4px);
+  transform:translateY(-5px);
   border-color:#444;
 }
 
-/* ===== Title ===== */
-.card h3{
-  font-size:16px;
-  margin-bottom:10px;
-}
-
-/* ===== Meta ===== */
 .meta{
-  font-size:13px;
   color:#aaa;
-  margin-bottom:10px;
+  font-size:13px;
 }
 
-/* ===== Tag ===== */
 .tag{
-  display:inline-block;
   background:#222;
   padding:4px 8px;
   border-radius:6px;
@@ -78,7 +52,6 @@ h2{
   margin-right:6px;
 }
 
-/* ===== CTA ===== */
 .cta{
   display:block;
   text-align:center;
@@ -86,32 +59,21 @@ h2{
   color:white;
   padding:10px;
   border-radius:10px;
-  font-weight:800;
   margin-top:12px;
   text-decoration:none;
+  font-weight:800;
 }
 
-.cta:hover{
-  background:#ff3b40;
-}
+.cta:hover{background:#ff3b40;}
 
-/* ===== Featured ===== */
-.featured .card{
-  background:linear-gradient(135deg,#1f1f25,#141418);
-  border:1px solid #333;
-}
-
-/* ===== Button ===== */
 .btn{
-  background:#fff;
-  color:#000;
+  background:white;
+  color:black;
   padding:8px 14px;
   border-radius:8px;
   text-decoration:none;
-  font-weight:700;
 }
 
-/* ===== Input ===== */
 input{
   padding:12px;
   border-radius:10px;
@@ -121,9 +83,8 @@ input{
 
 button{
   padding:12px;
-  border-radius:10px;
   border:none;
+  border-radius:10px;
   background:#ff5a5f;
   color:white;
-  font-weight:800;
 }
