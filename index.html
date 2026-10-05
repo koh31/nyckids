@@ -11,18 +11,19 @@
 
 <body>
 
-<header class="wrap">
+<header class="wrap header">
   <h1>NYC Kids Go</h1>
-  <a class="btn" href="#featured">Weekend Picks</a>
 </header>
 
-<section id="featured" class="wrap featured">
-  <h2>🔥 Weekend Picks</h2>
-  <div id="featuredList" class="grid"></div>
+<section class="hero wrap">
+  <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" class="hero-img">
+  <div>
+    <h2>Find fun events for kids in NYC</h2>
+    <p>週末のおでかけをすぐ見つけよう</p>
+  </div>
 </section>
 
-<div class="wrap">
-
+<section class="wrap filters">
   <select id="ageFilter">
     <option value="">All Ages</option>
     <option value="Toddler">Toddler</option>
@@ -36,10 +37,13 @@
     <option value="Music">Music</option>
     <option value="Outdoor">Outdoor</option>
   </select>
+</section>
 
-</div>
+<section class="wrap">
+  <h2>🔥 Recommended</h2>
+  <div id="featuredList" class="grid"></div>
+</section>
 
-  
 <section class="wrap">
   <h2>All Events</h2>
   <div id="eventsGrid" class="grid"></div>
@@ -48,7 +52,7 @@
 <section class="wrap">
   <h2>📬 Weekly Picks</h2>
   <form action="https://buttondown.email/api/emails/embed-subscribe/YOUR_ID" method="post">
-    <input type="email" name="email" placeholder="Enter your email">
+    <input type="email" name="email" placeholder="Enter email">
     <button>Subscribe</button>
   </form>
 </section>
