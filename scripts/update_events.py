@@ -317,3 +317,23 @@ events = sorted(events, key=lambda e: (-score_event(e), e["date"]))
 
 if __name__=="__main__":
     main()
+
+
+events = []
+
+events += existing_sources()   # そのまま
+events += parks()              # 追加
+events += lincoln_center()     # 追加
+
+# 最後にフィルタ
+filtered = []
+
+for e in events:
+    area = normalize_area(e)
+    if not area:
+        continue
+
+    e["area"] = area
+    filtered.append(e)
+
+events = filtered
