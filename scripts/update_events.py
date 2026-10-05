@@ -105,6 +105,30 @@ def enrich_event(e):
 
     return e
 
+
+def enrich_event(e):
+    text = (e.get("title","") + " " + e.get("description","")).lower()
+
+    if "music" in text:
+        genre = "Music"
+        ja = "音楽イベント"
+    elif "art" in text:
+        genre = "Art"
+        ja = "アート体験"
+    elif "park" in text:
+        genre = "Outdoor"
+        ja = "外遊びイベント"
+    else:
+        genre = "Other"
+        ja = "子ども向けイベント"
+
+    e["genre"] = genre
+    e["ja_desc"] = ja
+    e["age_group"] = "Kids"
+
+    return e
+
+
 def cmom():
     urls = [
         "https://cmom.org/events/category/sign-up-workshops/",
