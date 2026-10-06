@@ -1,404 +1,120 @@
 #!/usr/bin/env python3
-"""
-Daily updater for NYC Kids Go!
-- Pulls selected official event pages.
-- Parses upcoming child/family events.
-- Merges them with existing data.
-- Keeps future events only.
-
-NOTE:
-Website markup changes over time. Each source adapter is isolated so it can be
-updated independently when a source redesigns its site.
-"""
 from __future__ import annotations
-import json, re, hashlib
-from datetime import datetime, date
+import json,re,hashlib,html
 from pathlib import Path
+from datetime import datetime
 from zoneinfo import ZoneInfo
+from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 from dateutil import parser as dtparser
-
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "data" / "events.json"
-TZ = ZoneInfo("America/New_York")
-HEADERS = {"User-Agent": "NYCKidsGo/1.0 (+static family event index; respectful daily fetch)"}
-
-def clean(s: str) -> str:
-    return re.sub(r"\s+", " ", (s or "")).strip()
-
-def infer_category(text: str) -> str:
-    t = text.lower()
-    for keys, cat in [
-        (["dance","ballet"],"dance"), (["music","sing","song"],"music"),
-        (["art","paint","craft","design"],"art"), (["science","stem","robot"],"science"),
-        (["story","book","read"],"story"), (["park","outdoor","nature"],"outdoor"),
-        (["cook","food","boba"],"food"),
-    ]:
-        if any(k in t for k in keys): return cat
-    return "general"
-
-def age_group(text: str, default="all-ages"):
-    t=text.lower()
-    if re.search(r"\b(0|1|2|3|4|5)\b", t) and not re.search(r"\b(6|7|8|9|10|11|12)\b", t):
-        return "0-5","0–5歳"
-    if re.search(r"\b(6|7|8|9|10|11|12)\b", t):
-        return "6-12","6–12歳"
-    return default,"Family"
-
-
-def normalize_area(e):
-    text = (str(e.get("borough","")) + " " + str(e.get("location",""))).lower()
-
-    if "manhattan" in text or "mn" in text:
-        return "Manhattan"
-    if "brooklyn" in text or "bk" in text:
-        return "Brooklyn"
-    if "queens" in text or "qn" in text:
-        return "Queens"
-
-    return None
-
-
-area = normalize_area(e)
-
-if not area:
-    continue
-
-e["area"] = area
-
-
-def enrich_event(e):
-    text = (e.get("title","") + " " + e.get("description","")).lower()
-
-    # 年齢
-    if any(x in text for x in ["toddler","baby"]):
-        age = "Toddler"
-    elif any(x in text for x in ["teen","youth"]):
-        age = "Teens"
-    else:
-        age = "Kids"
-
-    # ジャンル
-    if "music" in text:
-        genre = "Music"
-    elif "art" in text:
-        genre = "Art"
-    elif "park" in text or "outdoor" in text:
-        genre = "Outdoor"
-    else:
-        genre = "Other"
-
-    # 日本語説明（超シンプル）
-    if genre == "Music":
-        ja = "子ども向け音楽イベント"
-    elif genre == "Art":
-        ja = "アート体験イベント"
-    elif genre == "Outdoor":
-        ja = "外遊びイベント"
-    else:
-        ja = "子ども向けイベント"
-
-    e["age_group"] = age
-    e["genre"] = genre
-    e["ja_desc"] = ja
-
-    return e
-
-
-def enrich_event(e):
-    text = (e.get("title","") + " " + e.get("description","")).lower()
-
-    if "music" in text:
-        genre = "Music"
-        ja = "音楽イベント"
-    elif "art" in text:
-        genre = "Art"
-        ja = "アート体験"
-    elif "park" in text:
-        genre = "Outdoor"
-        ja = "外遊びイベント"
-    else:
-        genre = "Other"
-        ja = "子ども向けイベント"
-
-    e["genre"] = genre
-    e["ja_desc"] = ja
-    e["age_group"] = "Kids"
-
-    return e
-
-
-def cmom():
-    urls = [
-        "https://cmom.org/events/category/sign-up-workshops/",
-        "https://cmom.org/events/category/performances-shows/",
-        "https://cmom.org/events/category/drop-in-programs/",
-    ]
-    out=[]
-    for url in urls:
-        r=requests.get(url,headers=HEADERS,timeout=25); r.raise_for_status()
-        soup=BeautifulSoup(r.text,"html.parser")
-        # The Events Calendar commonly uses tribe-events structures.
-        candidates=soup.select("article, .tribe-events-calendar-list__event, .type-tribe_events")
-        for node in candidates:
-            title_node=node.select_one("h2 a, h3 a, .tribe-events-calendar-list__event-title-link")
-            if not title_node: continue
-            title=clean(title_node.get_text(" ",strip=True))
-            text=clean(node.get_text(" ",strip=True))
-            date_node=node.select_one("time")
-            dt=None
-            if date_node:
-                raw=date_node.get("datetime") or date_node.get_text(" ",strip=True)
-                try: dt=dtparser.parse(raw)
-                except Exception: pass
-            if not dt:
-                m=re.search(r"(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}(?:,\s+\d{4})?",text)
-                if m:
-                    try: dt=dtparser.parse(m.group(0),default=datetime.now(TZ).replace(tzinfo=None))
-                    except Exception: pass
-            if not dt: continue
-            if dt.date() < datetime.now(TZ).date(): continue
-            ag, label=age_group(text,"0-5")
-            href=title_node.get("href") or url
-            out.append({
-                "title":title,"date":dt.date().isoformat(),"time":"",
-                "borough":"Manhattan","venue":"Children's Museum of Manhattan",
-                "age_group":ag,"age_label":label if label!="Family" else "0–6中心",
-                "price_type":"paid","category":infer_category(text),"tags":[],
-                "description":clean(text[:280]),"source":"Children's Museum of Manhattan","url":href
-            })
-    return out
-
-
-
-
-def nypl():
-    out = []
-
-    for page in range(0,5):
-        url = f"https://www.nypl.org/events/calendar?page={page}&audience=children"
-
-        r = requests.get(url, headers=HEADERS)
-        soup = BeautifulSoup(r.text, "html.parser")
-
-        for row in soup.select("table tr"):
-            text = row.get_text(" ", strip=True)
-
-        if not any(x in text.lower() for x in ["child", "family", "toddler", "baby"]):
-        continue
-
-            out.append({
-                "title": text[:80],
-                "source": "NYPL",
-                "url": url
-            })
-
-    return out
-
-def lincoln_center():
-    url = "https://www.lincolncenter.org/series/family"
-
-    r = requests.get(url, headers=HEADERS)
-    soup = BeautifulSoup(r.text, "html.parser")
-
-    out = []
-    for card in soup.select("a[href*='/series/family']"):
-        title = card.get_text(strip=True)
-
-        # タイトルが短すぎるものは除外
-        if len(title) < 5:
-            continue
-
-        # 子ども向けフィルタ
-        if not any(x in title.lower() for x in ["family", "kids", "children"]):
-            continue
-
-        link = card.get("href")
-
-        if link and link.startswith("/"):
-            link = "https://www.lincolncenter.org" + link
-
-        if "free" in title.lower():
-            price_type = "free"
-        else:
-            price_type = "paid"
-        
-        out.append({
-            "title": title,
-            "date": "unknown",
-            "borough": "Manhattan",
-            "age_group": "family",
-            "price_type": "paid",
-            "description": title,
-            "source": "Lincoln Center",
-            "url": link
-        })
-
-    return out[:30]
-
-
-def parks():
-    url = "https://data.cityofnewyork.us/resource/w3wp-dpdi.json"
-
-    r = requests.get(url)
-    data = r.json()
-
-    out = []
-
-    for e in data:
-        title = e.get("title","")
-        desc = e.get("description","")
-
-        text = f"{title} {desc}".lower()
-
-        # 子ども向けだけ
-        if not any(x in text for x in ["child","kids","family","youth"]):
-            continue
-
-        area = normalize_area({
-            "borough": e.get("borough",""),
-            "location": e.get("location","")
-        })
-
-        # 👉 Manhattan / Brooklyn / Queensだけ残す
-        if not area:
-            continue
-
-        out.append({
-            "title": title,
-            "date": e.get("starttime",""),
-            "borough": area,
-            "area": area,
-            "age_group": "family",
-            "price_type": "free",
-            "description": desc,
-            "source": "NYC Parks",
-            "url": e.get("link") or ""
-        })
-
-    return out
-
-
-
-
-def bpl():
-    url="https://www.bklynlibrary.org/event-series/events-for-youth-and-family"
-    r=requests.get(url,headers=HEADERS,timeout=25); r.raise_for_status()
-    soup=BeautifulSoup(r.text,"html.parser")
-    out=[]
-    # Parse blocks that contain event links + recognizable dates.
-    for node in soup.select("article, .event, .views-row, li"):
-        a=node.find("a")
-        if not a: continue
+ROOT=Path(__file__).resolve().parents[1];DATA=ROOT/"data"/"events.json";TZ=ZoneInfo("America/New_York")
+HEADERS={"User-Agent":"NYCKidsGo/1.0 (+family event index)"};ALLOWED_AREAS={"Manhattan","Brooklyn","Queens"}
+def clean(v):return re.sub(r"\s+"," ",html.unescape(str(v or ""))).strip()
+def get(url):
+    r=requests.get(url,headers=HEADERS,timeout=30);r.raise_for_status();return r
+def parse_date(text):
+    text=clean(text);m=re.search(r"\b(20\d{2})-(\d{2})-(\d{2})\b",text)
+    if m:return m.group(0)
+    m=re.search(r"\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}(?:,\s*20\d{2})?",text,re.I)
+    if not m:return ""
+    try:
+        default=datetime.now(TZ).replace(tzinfo=None);d=dtparser.parse(m.group(0),default=default)
+        if not re.search(r"20\d{2}",m.group(0)) and d.date()<datetime.now(TZ).date():d=d.replace(year=d.year+1)
+        return d.date().isoformat()
+    except:return ""
+def date_label(date):
+    try:return datetime.fromisoformat(date).strftime("%b %d").replace(" 0"," ")
+    except:return date or ""
+def infer_age(text,default="Family"):
+    t=text.lower();m=re.search(r"ages?\s*(\d{1,2})\s*[–—-]\s*(\d{1,2})",t)
+    if m:
+        lo,hi=int(m.group(1)),int(m.group(2))
+        if hi<=5:return "0-5"
+        if lo>=13:return "13+"
+        if lo>=6 and hi<=12:return "6-12"
+        return "Family"
+    if any(k in t for k in ["baby","babies","toddler","preschool"]):return "0-5"
+    if "teen" in t:return "13+"
+    return default
+def infer_genre(text):
+    t=text.lower();checks=[(["storytime","story time","read aloud"],"Storytime"),(["music","sing","song","concert"],"Music"),(["dance","theater","theatre","performance","show"],"Performance"),(["science","stem","engineering"],"Science"),(["outdoor","park","garden","nature walk"],"Outdoor"),(["workshop","craft","hands-on"],"Workshop"),(["art","paint","drawing","gallery"],"Art")]
+    for keys,g in checks:
+        if any(k in t for k in keys):return g
+    return "Other"
+def infer_price(text,default="paid"):
+    t=text.lower();return "free" if "free" in t or "no cost" in t else default
+def image_from(node,base):
+    img=node.select_one("img")
+    if not img:return ""
+    src=img.get("src") or img.get("data-src") or img.get("data-lazy-src") or ""
+    return "" if not src or src.startswith("data:") else urljoin(base,src)
+def candidate_nodes(soup):
+    sels=["article","[class*='event-card']","[class*='event_card']","[class*='event-list'] > *","[class*='calendar'] article",".views-row","li[class*='event']"];found=[];seen=set()
+    for sel in sels:
+        for n in soup.select(sel):
+            if id(n) not in seen:seen.add(id(n));found.append(n)
+    return found
+def generic_events(url,source,area="Manhattan",default_age="Family",default_price="paid",must_terms=None,limit=80):
+    soup=BeautifulSoup(get(url).text,"html.parser");out=[]
+    for n in candidate_nodes(soup):
+        text=clean(n.get_text(" ",strip=True));low=text.lower()
+        if len(text)<18 or (must_terms and not any(k in low for k in must_terms)):continue
+        a=n.select_one("h1 a,h2 a,h3 a,h4 a,a")
+        if not a:continue
         title=clean(a.get_text(" ",strip=True))
-        text=clean(node.get_text(" ",strip=True))
-        if len(title)<4 or not re.search(r"\b(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b",text,re.I): continue
-        m=re.search(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2}",text,re.I)
-        if not m: continue
-        try:
-            dt=dtparser.parse(m.group(0),default=datetime.now(TZ).replace(tzinfo=None))
-            if dt.date() < datetime.now(TZ).date():
-                dt=dt.replace(year=dt.year+1)
-        except Exception: continue
-        href=a.get("href") or url
-        if href.startswith("/"): href="https://www.bklynlibrary.org"+href
-        out.append({
-            "title":title,"date":dt.date().isoformat(),"time":"",
-            "borough":"Brooklyn","venue":"Brooklyn Public Library",
-            "age_group":"all-ages","age_label":"Family","price_type":"free",
-            "category":infer_category(text),"tags":["kids","family"],
-            "description":clean(text[:280]),"source":"Brooklyn Public Library","url":href
-        })
+        if len(title)<4 or len(title)>180:continue
+        d=parse_date(text)
+        if not d or d<datetime.now(TZ).date().isoformat():continue
+        out.append({"title":title,"date":d,"date_label":date_label(d),"time":"","area":area,"borough":area,"venue":source,"age_group":infer_age(text,default_age),"genre":infer_genre(text),"price_type":infer_price(text,default_price),"description":clean(text[:650]),"source":source,"url":urljoin(url,a.get("href") or url),"image":image_from(n,url)})
+        if len(out)>=limit:break
     return out
-
+def nypl():
+    url="https://www.nypl.org/events/calendar?audience=children";soup=BeautifulSoup(get(url).text,"html.parser");out=[]
+    for n in candidate_nodes(soup)+list(soup.select("table tr")):
+        text=clean(n.get_text(" ",strip=True));low=text.lower()
+        if len(text)<20 or not any(k in low for k in ["child","kids","family","toddler","baby","storytime","teen"]):continue
+        a=n.select_one("h2 a,h3 a,h4 a,a")
+        if not a:continue
+        title=clean(a.get_text(" ",strip=True));d=parse_date(text)
+        if len(title)<4 or not d or d<datetime.now(TZ).date().isoformat():continue
+        area="Manhattan"
+        if "brooklyn" in low:area="Brooklyn"
+        elif "queens" in low:area="Queens"
+        elif "bronx" in low or "staten island" in low:continue
+        out.append({"title":title,"date":d,"date_label":date_label(d),"time":"","area":area,"borough":area,"venue":"New York Public Library","age_group":infer_age(text),"genre":infer_genre(text),"price_type":"free","description":clean(text[:650]),"source":"NYPL","url":urljoin(url,a.get("href") or url),"image":image_from(n,url)})
+    return out[:120]
+def cmom():return generic_events("https://cmom.org/events/","Children's Museum of Manhattan","Manhattan","0-5","paid",["event","workshop","family","children","story","art","music","science","play"],80)
+def moma():
+    out=[]
+    for url in ["https://www.moma.org/visit/families/","https://www.moma.org/calendar/"]:
+        try:out+=generic_events(url,"MoMA","Manhattan","Family","paid",["family","kids","kid","children","child","teen","gallery talk","workshop"],70)
+        except Exception as e:print("[WARN] MoMA",e)
+    return out
+def met():
+    out=[]
+    for url in ["https://www.metmuseum.org/events","https://www.metmuseum.org/visit-guides/families/programs-and-resources","https://www.metmuseum.org/visit-guides/families/childrens-classes"]:
+        try:out+=generic_events(url,"The Met","Manhattan","Family","paid",["famil","kids","kid","children","child","storytime","ages","art","studio"],80)
+        except Exception as e:print("[WARN] The Met",e)
+    return out
 def dedupe(items):
-    seen=set(); out=[]
-    for e in sorted(items,key=lambda x:(x["date"],x["title"])):
-        key=hashlib.sha1((e["title"].lower()+e["date"]+e["source"]).encode()).hexdigest()
-        if key not in seen:
-            seen.add(key); out.append(e)
+    out=[];seen=set()
+    for e in sorted(items,key=lambda x:(x.get("date","9999"),x.get("title",""))):
+        key=hashlib.sha1((e.get("title","").lower()+e.get("date","")+e.get("source","")).encode()).hexdigest()
+        if key in seen:continue
+        seen.add(key);out.append(e)
     return out
-
 def main():
-    existing={"events":[]}
+    old={"events":[]}
     if DATA.exists():
-        existing=json.loads(DATA.read_text(encoding="utf-8"))
+        try:old=json.loads(DATA.read_text(encoding="utf-8"))
+        except:pass
     fresh=[]
-    for fn in (cmom,bpl):
-        try: fresh += fn()
-        except Exception as exc: print(f"[WARN] {fn.__name__}: {exc}")
-    today=datetime.now(TZ).date().isoformat()
-    # Keep old future records as fallback, then let new scrape refresh/augment.
-    merged=[e for e in existing.get("events",[]) if e.get("date","")>=today] + fresh
-    payload={"updated_at":datetime.now(TZ).isoformat(timespec="seconds"),"events":dedupe(merged)}
-    DATA.write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding="utf-8")
-    print(f"Wrote {len(payload['events'])} events")
-
-def is_kids_event(text: str) -> bool:
-    t = text.lower()
-
-    include = [
-        "kids", "children", "family", "toddler",
-        "storytime", "story time", "baby",
-        "parent", "family friendly"
-    ]
-
-    exclude = [
-        "21+", "adult", "networking", "business",
-        "conference", "crypto", "dating"
-    ]
-
-    if any(x in t for x in exclude):
-        return False
-
-    return any(x in t for x in include)
-
-if not is_kids_event(text):
-    continue
-
-def score_event(e):
-    score = 0
-
-    if e["price_type"] == "free":
-        score += 2
-
-    if "museum" in e["source"].lower():
-        score += 2
-
-    if e["age_group"] in ["0-5", "6-12"]:
-        score += 1
-
-    if "story" in e["title"].lower():
-        score += 1
-
-    return score
-
-events = sorted(events, key=lambda e: (-score_event(e), e["date"]))
-
-if __name__=="__main__":
-    main()
-
-
-events = []
-
-events += existing_sources()   # そのまま
-events += parks()              # 追加
-events += lincoln_center()     # 追加
-
-# 最後にフィルタ
-filtered = []
-
-for e in events:
-    area = normalize_area(e)
-    if not area:
-        continue
-
-    e["area"] = area
-    filtered.append(e)
-
-events = filtered
-
-
-events = [enrich_event(e) for e in events]
-
+    for fn in (nypl,cmom,moma,met):
+        try:
+            rows=fn();print(fn.__name__,len(rows));fresh+=rows
+        except Exception as e:print("[WARN]",fn.__name__,e)
+    today=datetime.now(TZ).date().isoformat();retained=[e for e in old.get("events",[]) if e.get("date","")>=today]
+    items=dedupe(retained+fresh);items=[e for e in items if not (e.get("area") and e.get("area") not in ALLOWED_AREAS)]
+    DATA.write_text(json.dumps({"updated_at":datetime.now(TZ).isoformat(timespec="seconds"),"events":items},ensure_ascii=False,indent=2),encoding="utf-8");print("TOTAL",len(items))
+if __name__=="__main__":main()
