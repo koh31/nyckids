@@ -1,0 +1,9 @@
+{
+  "updated_at": "2026-10-05T20:00:00-04:00",
+  "events": [
+    {"title":"Storytime at The Met—Drip! Drop! Splash!","date":"2026-10-06","date_label":"Oct 6","time":"10:15 AM","area":"Manhattan","borough":"Manhattan","venue":"The Met Fifth Avenue","age_group":"0-5","genre":"Storytime","price_type":"paid","description":"A family storytime program at The Metropolitan Museum of Art. Free with Museum admission.","source":"The Met","url":"https://www.metmuseum.org/events","image":""},
+    {"title":"Family Gallery Talks","date":"2026-10-10","date_label":"Oct 10","time":"","area":"Manhattan","borough":"Manhattan","venue":"MoMA","age_group":"Family","genre":"Art","price_type":"paid","description":"Explore art together through family-focused gallery conversations and creative activities.","source":"MoMA","url":"https://www.moma.org/visit/families/","image":""},
+    {"title":"Hands-on Family Program","date":"2026-10-11","date_label":"Oct 11","time":"","area":"Manhattan","borough":"Manhattan","venue":"Children's Museum of Manhattan","age_group":"0-5","genre":"Workshop","price_type":"paid","description":"Hands-on programming for young children with art, music, science, storytelling, learning, and play.","source":"Children's Museum of Manhattan","url":"https://cmom.org/events/","image":""},
+    {"title":"Children's Storytime","date":"2026-10-12","date_label":"Oct 12","time":"","area":"Manhattan","borough":"Manhattan","venue":"New York Public Library","age_group":"Family","genre":"Storytime","price_type":"free","description":"A free library program for children and families.","source":"NYPL","url":"https://www.nypl.org/events/calendar?audience=children","image":""}
+  ]
+}

@@ -1,63 +1,54 @@
 <!doctype html>
-<html>
+<html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NYC Kids Go</title>
-
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="NYCの子ども向けイベントを探せるファミリーイベントガイド。">
+  <title>NYC Kids Go — Family Events in New York</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
-
-<header class="wrap header">
-  <h1>NYC Kids Go</h1>
-</header>
-
-<section class="hero wrap">
-  <img src="https://cdn-icons-png.flaticon.com/512/3468/3468379.png">
-  <div>
-    <h2>NYCの子ども向けイベントを探す</h2>
-    <p>週末のおでかけをシンプルに見つけよう</p>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="logo" href="#"><span class="logo-mark">NY</span><span>NYC Kids Go</span></a>
+    <nav><a href="#featured">Picks</a><a href="#events">Events</a></nav>
   </div>
-</section>
-
-<section class="wrap filters">
-  <select id="ageFilter">
-    <option value="">All Ages</option>
-    <option value="Toddler">Toddler</option>
-    <option value="Kids">Kids</option>
-    <option value="Teens">Teens</option>
-  </select>
-
-  <select id="genreFilter">
-    <option value="">All Genres</option>
-    <option value="Art">Art</option>
-    <option value="Music">Music</option>
-    <option value="Outdoor">Outdoor</option>
-  </select>
-</section>
-
-<section class="wrap">
-  <h2>🔥 Recommended</h2>
-  <div id="featuredList" class="grid"></div>
-</section>
-
-<section class="wrap">
-  <h2>All Events</h2>
-  <div id="eventsGrid" class="grid"></div>
-</section>
-
-<section class="wrap">
-  <h2>📬 Weekly Picks</h2>
-  <form action="https://buttondown.email/api/emails/embed-subscribe/YOUR_ID" method="post">
-    <input type="email" name="email" placeholder="Enter email">
-    <button>Subscribe</button>
-  </form>
-</section>
-
-<script src="app.js"></script>
-
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">NEW YORK CITY · FAMILY GUIDE</div>
+        <h1>Great NYC days<br>start <em>here.</em></h1>
+        <p>NYCの子ども向けイベントを、見やすく、シンプルに。美術館、図書館、ワークショップ、音楽、屋外イベントまで。</p>
+        <div class="hero-actions"><a href="#events" class="button primary">イベントを探す</a><a href="#featured" class="button secondary">今週のおすすめ</a></div>
+        <div class="update"><span></span><b id="updatedAt">Loading events…</b></div>
+      </div>
+      <div class="hero-illustration" aria-hidden="true">
+        <div class="sun"></div><div class="building b1"></div><div class="building b2"></div><div class="building b3"></div>
+        <div class="cloud c1"></div><div class="cloud c2"></div>
+        <div class="kid-card k1">🎨</div><div class="kid-card k2">📚</div><div class="kid-card k3">🦖</div>
+      </div>
+    </div>
+  </section>
+  <section class="wrap filter-shell">
+    <div class="quick-row">
+      <button class="quick active" data-quick="all">すべて</button><button class="quick" data-quick="free">Free</button><button class="quick" data-quick="weekend">今週末</button><button class="quick" data-quick="museum">Museum</button>
+    </div>
+    <div class="filters">
+      <label><span>AREA</span><select id="areaFilter"><option value="">Manhattan / Brooklyn / Queens</option><option value="Manhattan">Manhattan</option><option value="Brooklyn">Brooklyn</option><option value="Queens">Queens</option></select></label>
+      <label><span>AGE</span><select id="ageFilter"><option value="">All ages</option><option value="0-5">0–5</option><option value="6-12">6–12</option><option value="13+">13+</option><option value="Family">Family</option></select></label>
+      <label><span>TYPE</span><select id="genreFilter"><option value="">All types</option><option value="Art">Art</option><option value="Music">Music</option><option value="Storytime">Storytime</option><option value="Science">Science</option><option value="Outdoor">Outdoor</option><option value="Workshop">Workshop</option><option value="Performance">Performance</option><option value="Other">Other</option></select></label>
+      <label class="search"><span>SEARCH</span><input id="searchInput" placeholder="art, storytime, museum…"></label>
+    </div>
+  </section>
+  <section id="featured" class="wrap section"><div class="section-head"><div><span class="eyebrow">CURATED</span><h2>Weekend Picks</h2></div><p>おすすめを自動セレクト</p></div><div id="featuredList" class="featured-grid"></div></section>
+  <section id="events" class="wrap section all-section"><div class="section-head"><div><span class="eyebrow">DISCOVER</span><h2>All Events</h2></div><p id="resultCount"></p></div><div id="eventsGrid" class="events-grid"></div><div id="empty" class="empty hidden"><div>✦</div><h3>イベントが見つかりませんでした</h3><p>フィルターを変えてみてください。</p></div></section>
+</main>
+<footer><div class="wrap footer-grid"><div><div class="logo"><span class="logo-mark">NY</span><span>NYC Kids Go</span></div><p>NYCで、家族の次のおでかけを見つける。</p></div><p class="disclaimer">日時・料金・対象年齢などは変更される場合があります。参加前に主催者の公式ページをご確認ください。</p></div></footer>
+<script src="./app.js"></script>
 </body>
 </html>

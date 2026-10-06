@@ -1,68 +1,14 @@
 let events = [];
-
-function score(e){
-  let s = 0;
-  if(e.price_type==="free") s+=2;
-  if(e.area==="Manhattan") s+=2;
-  return s;
-}
-
-function applyFilters(list){
-  const age = document.getElementById("ageFilter").value;
-  const genre = document.getElementById("genreFilter").value;
-
-  return list.filter(e=>{
-    if(age && e.age_group !== age) return false;
-    if(genre && e.genre !== genre) return false;
-    return true;
-  });
-}
-
-function renderCard(e){
-  return `
-  <div class="card">
-    <h3>${e.title}</h3>
-
-    <div class="meta">
-      ${e.date || ""} ・ ${e.area || ""}
-    </div>
-
-    <div style="font-size:13px; margin:6px 0;">
-      ${e.ja_desc || ""}
-    </div>
-
-    <div>
-      <span class="tag">${e.age_group || ""}</span>
-      <span class="tag">${e.genre || ""}</span>
-    </div>
-
-    <a class="cta" href="${e.url}" target="_blank">
-      詳細を見る
-    </a>
-  </div>
-  `;
-}
-
-function render(){
-  const filtered = applyFilters(events);
-
-  document.getElementById("eventsGrid").innerHTML =
-    filtered.map(renderCard).join("");
-
-  const top = [...filtered]
-    .sort((a,b)=>score(b)-score(a))
-    .slice(0,5);
-
-  document.getElementById("featuredList").innerHTML =
-    top.map(renderCard).join("");
-}
-
-fetch("./data/events.json")
-  .then(r=>r.json())
-  .then(d=>{
-    events = d.events;
-    render();
-  });
-
-document.getElementById("ageFilter").addEventListener("change", render);
-document.getElementById("genreFilter").addEventListener("change", render);
+let quick = "all";
+const $ = s => document.querySelector(s);
+function safe(v=""){return String(v).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
+function truncate(v="",n=145){v=String(v).replace(/\s+/g," ").trim();return v.length>n?v.slice(0,n).trim()+"…":v;}
+function eventDate(e){if(!e.date)return null;const d=new Date(e.date+"T12:00:00");return Number.isNaN(d.getTime())?null:d;}
+function isThisWeekend(e){const d=eventDate(e);if(!d)return false;const now=new Date(),day=now.getDay();const sat=new Date(now);sat.setHours(0,0,0,0);sat.setDate(now.getDate()+((6-day+7)%7));const sun=new Date(sat);sun.setDate(sat.getDate()+1);sun.setHours(23,59,59,999);return d>=sat&&d<=sun;}
+function score(e){let s=0;if(e.price_type==="free")s+=2;if(["The Met","MoMA","Children's Museum of Manhattan","NYPL"].includes(e.source))s+=2;if(e.age_group&&e.age_group!=="Family")s+=1;if(isThisWeekend(e))s+=3;return s;}
+function fallbackIcon(e){const g=(e.genre||"").toLowerCase();if(g.includes("art"))return "🎨";if(g.includes("music"))return "🎵";if(g.includes("story"))return "📚";if(g.includes("science"))return "🔬";if(g.includes("outdoor"))return "🌳";if(g.includes("performance"))return "🎭";if(g.includes("workshop"))return "✂️";return "✨";}
+function renderCard(e,featured=false){const image=e.image?`<img src="${safe(e.image)}" alt="" loading="lazy" onerror="this.style.display='none'">`:`<div class="fallback-illustration">${fallbackIcon(e)}</div>`;const area=e.area||e.borough||"NYC";return `<article class="card"><div class="card-media">${image}<span class="source-chip">${safe(e.source||"Event")}</span></div><div class="card-body"><div class="meta"><span>${safe(area)}</span>${e.time?`<span>· ${safe(e.time)}</span>`:""}</div><h3>${safe(e.title||"Untitled event")}</h3><p class="desc">${safe(truncate(e.description||"",featured?90:145))}</p><div class="tags">${e.price_type==="free"?'<span class="tag free">FREE</span>':""}${e.age_group?`<span class="tag">${safe(e.age_group)}</span>`:""}${e.genre?`<span class="tag">${safe(e.genre)}</span>`:""}</div><div class="card-foot"><span class="date">${safe(e.date_label||e.date||"")}</span>${e.url?`<a class="cta" href="${safe(e.url)}" target="_blank" rel="noopener noreferrer">View details ↗</a>`:""}</div></div></article>`;}
+function filteredEvents(){const area=$("#areaFilter").value,age=$("#ageFilter").value,genre=$("#genreFilter").value,q=$("#searchInput").value.toLowerCase().trim();return events.filter(e=>{const eventArea=e.area||e.borough||"";if(area&&eventArea!==area)return false;if(age&&e.age_group!==age&&e.age_group!=="Family")return false;if(genre&&e.genre!==genre)return false;if(q&&!`${e.title||""} ${e.description||""} ${e.source||""} ${eventArea}`.toLowerCase().includes(q))return false;if(quick==="free"&&e.price_type!=="free")return false;if(quick==="weekend"&&!isThisWeekend(e))return false;if(quick==="museum"&&!["The Met","MoMA","Children's Museum of Manhattan"].includes(e.source))return false;return true;}).sort((a,b)=>(a.date||"9999").localeCompare(b.date||"9999"));}
+function render(){const list=filteredEvents();$("#resultCount").textContent=`${list.length} events`;$("#eventsGrid").innerHTML=list.map(e=>renderCard(e)).join("");$("#empty").classList.toggle("hidden",list.length>0);const top=[...list].sort((a,b)=>score(b)-score(a)).slice(0,5);$("#featuredList").innerHTML=top.map(e=>renderCard(e,true)).join("");}
+async function boot(){try{const r=await fetch("./data/events.json",{cache:"no-store"});if(!r.ok)throw new Error("events.json: "+r.status);const d=await r.json();events=Array.isArray(d.events)?d.events:[];if(d.updated_at){const dt=new Date(d.updated_at);$("#updatedAt").textContent="Updated "+dt.toLocaleString("ja-JP",{dateStyle:"medium",timeStyle:"short"});}else{$("#updatedAt").textContent="Events loaded";}render();}catch(err){console.error(err);$("#updatedAt").textContent="イベントデータを読み込めませんでした";}}
+["areaFilter","ageFilter","genreFilter"].forEach(id=>$("#"+id).addEventListener("change",render));$("#searchInput").addEventListener("input",render);document.querySelectorAll(".quick").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".quick").forEach(x=>x.classList.remove("active"));btn.classList.add("active");quick=btn.dataset.quick;render();}));boot();
