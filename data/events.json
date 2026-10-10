@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T06:25:52-04:00",
+  "updated_at": "2026-10-10T18:24:56-04:00",
   "events": [
     {
       "title": "Colombian Inspired Gold Foil Art",
@@ -959,6 +959,70 @@
       "description": "Dress Up Drawings October 24 @ 11:15 am - 12:15 pm Dress Up Drawings PlayWorks Experiment with different drawing tools to draw yourself in a special costume. Each tool shows a different texture on the paper. How do you want your costume to look?",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/dress-up-drawings/2026-10-24/1/",
+      "image": ""
+    },
+    {
+      "title": "Perfect Pairs Cooking Class with atelier vivi",
+      "date": "2026-10-24",
+      "date_label": "Oct 24",
+      "time": "11:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Perfect Pairs Cooking Class with atelier vivi October 24 @ 11:30 am - 12:15 pm Perfect Pairs Cooking Class with atelier vivi PlayWorks Classroom Join atelier vivi, where families can experience real ingredients, thoughtfully designed recipes, and beautiful spaces. In this class, children will make a seasonal food item with a tasty drink! Come snack away with CMOM and atelier vivi!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/perfect-pairs-cooking-class-with-atelier-vivi/2026-10-24/2/",
+      "image": ""
+    },
+    {
+      "title": "Boo! It’s Boba",
+      "date": "2026-10-24",
+      "date_label": "Oct 24",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Boo! It’s Boba October 24 @ 2:00 pm - 2:45 pm Boo! It’s Boba Discovery Classroom Create your own pumpkin boba tea, also known as bubble tea, with cooking instructor, Ye Ye! Learn about the origins of the drink, roll and create your own boba, or tapioca pearls, and add in edible Halloween designs to your yummy drink.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/boo-its-boba/2026-10-24/1/",
+      "image": ""
+    },
+    {
+      "title": "Dress Up Drawings",
+      "date": "2026-10-24",
+      "date_label": "Oct 24",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Art",
+      "price_type": "paid",
+      "description": "Dress Up Drawings October 24 @ 2:45 pm - 3:45 pm Dress Up Drawings PlayWorks Experiment with different drawing tools to draw yourself in a special costume. Each tool shows a different texture on the paper. How do you want your costume to look?",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/dress-up-drawings/2026-10-24/2/",
+      "image": ""
+    },
+    {
+      "title": "Boo! It’s Boba",
+      "date": "2026-10-24",
+      "date_label": "Oct 24",
+      "time": "3:15 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Boo! It’s Boba October 24 @ 3:15 pm - 4:00 pm Boo! It’s Boba Discovery Classroom Create your own pumpkin boba tea, also known as bubble tea, with cooking instructor, Ye Ye! Learn about the origins of the drink, roll and create your own boba, or tapioca pearls, and add in edible Halloween designs to your yummy drink.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/boo-its-boba/2026-10-24/2/",
       "image": ""
     }
   ]
