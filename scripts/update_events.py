@@ -384,7 +384,7 @@ def scrape_page(url, source, area="Manhattan",
 
 
 def nypl():
-    url = "https://www.nypl.org/events/calendar?audience=children"
+    url = "https://www.nypl.org/events/calendar?audience=0"
     return scrape_page(
         url, "NYPL", "Manhattan", "Family", "free"
     )
