@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T06:41:01-04:00",
+  "updated_at": "2026-10-16T18:37:33-04:00",
   "events": [
     {
       "title": "Potion Commotion Design",
@@ -799,6 +799,54 @@
       "description": "Silly Hands & Fuzzy Fingers Dress Up October 30 @ 2:00 pm - 4:15 pm Silly Hands & Fuzzy Fingers Dress Up Makerspace Get your hands styling and dressed up by crafting tiny costumes for finger puppets. Finish with googly eyes and fuzzy claws and paws that’ll give someone a good giggle!",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/silly-hands-fuzzy-fingers-dress-up/2026-10-30/2/",
+      "image": ""
+    },
+    {
+      "title": "Trick-or-Treat Tote Bags",
+      "date": "2026-10-30",
+      "date_label": "Oct 30",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Outdoor",
+      "price_type": "paid",
+      "description": "Trick-or-Treat Tote Bags October 30 @ 2:45 pm - 3:45 pm Trick-or-Treat Tote Bags PlayWorks Identify shapes and symbols as you use stamps and ink pads to decorate a tote bag. Tie sparkly ribbon in Halloween shades to add some flair to your design. This bag will come in handy as you collect candy on Halloween!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/trick-or-treat-tote-bags/2026-10-30/",
+      "image": ""
+    },
+    {
+      "title": "Monster Costume Quest",
+      "date": "2026-10-31",
+      "date_label": "Oct 31",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Monster Costume Quest October 31 @ 10:30 am - 4:15 pm Four silly monsters are hiding today! Can you find them before they sneak away? Follow the clues- one monster per floor, then claim your SILLY prize on the 1st floor!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/monster-costume-quest/",
+      "image": ""
+    },
+    {
+      "title": "Silly Hands & Fuzzy Fingers Dress Up",
+      "date": "2026-10-31",
+      "date_label": "Oct 31",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Workshop",
+      "price_type": "paid",
+      "description": "Silly Hands & Fuzzy Fingers Dress Up October 31 @ 10:30 am - 12:30 pm Silly Hands & Fuzzy Fingers Dress Up Makerspace Get your hands styling and dressed up by crafting tiny costumes for finger puppets. Finish with googly eyes and fuzzy claws and paws that’ll give someone a good giggle!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/silly-hands-fuzzy-fingers-dress-up/2026-10-31/1/",
       "image": ""
     }
   ]
