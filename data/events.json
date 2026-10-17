@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T06:36:04-04:00",
+  "updated_at": "2026-10-17T18:32:44-04:00",
   "events": [
     {
       "title": "Potion Commotion Design",
@@ -799,6 +799,86 @@
       "description": "Silly Hands & Fuzzy Fingers Dress Up October 31 @ 10:30 am - 12:30 pm Silly Hands & Fuzzy Fingers Dress Up Makerspace Get your hands styling and dressed up by crafting tiny costumes for finger puppets. Finish with googly eyes and fuzzy claws and paws that’ll give someone a good giggle!",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/silly-hands-fuzzy-fingers-dress-up/2026-10-31/1/",
+      "image": ""
+    },
+    {
+      "title": "Trick-or-Treat Tote Bags",
+      "date": "2026-10-31",
+      "date_label": "Oct 31",
+      "time": "11:15 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Outdoor",
+      "price_type": "paid",
+      "description": "Trick-or-Treat Tote Bags October 31 @ 11:15 am - 12:15 pm Trick-or-Treat Tote Bags PlayWorks Identify shapes and symbols as you use stamps and ink pads to decorate a tote bag. Tie sparkly ribbon in Halloween shades to add some flair to your design. This bag will come in handy as you collect candy on Halloween!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/trick-or-treat-tote-bags/2026-10-31/1/",
+      "image": ""
+    },
+    {
+      "title": "Silly Hands & Fuzzy Fingers Dress Up",
+      "date": "2026-10-31",
+      "date_label": "Oct 31",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Workshop",
+      "price_type": "paid",
+      "description": "Silly Hands & Fuzzy Fingers Dress Up October 31 @ 2:00 pm - 4:15 pm Silly Hands & Fuzzy Fingers Dress Up Makerspace Get your hands styling and dressed up by crafting tiny costumes for finger puppets. Finish with googly eyes and fuzzy claws and paws that’ll give someone a good giggle!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/silly-hands-fuzzy-fingers-dress-up/2026-10-31/2/",
+      "image": ""
+    },
+    {
+      "title": "Trick-or-Treat Tote Bags",
+      "date": "2026-10-31",
+      "date_label": "Oct 31",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Outdoor",
+      "price_type": "paid",
+      "description": "Trick-or-Treat Tote Bags October 31 @ 2:45 pm - 3:45 pm Trick-or-Treat Tote Bags PlayWorks Identify shapes and symbols as you use stamps and ink pads to decorate a tote bag. Tie sparkly ribbon in Halloween shades to add some flair to your design. This bag will come in handy as you collect candy on Halloween!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/trick-or-treat-tote-bags/2026-10-31/2/",
+      "image": ""
+    },
+    {
+      "title": "Mini Marathon Runners",
+      "date": "2026-11-01",
+      "date_label": "Nov 1",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Mini Marathon Runners November 1 @ 10:30 am - 12:30 pm Mini Marathon Runners Makerspace Sculpt a mini runner along with a mini uniform with your lucky number on it. Make a friend at the museum and run alongside them to the finish on our pretend mini running path!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/mini-marathon-runners/2026-11-01/1/",
+      "image": ""
+    },
+    {
+      "title": "Music and Marks: Performance with a Woodwind Trio from Manhattan School of Music",
+      "date": "2026-11-01",
+      "date_label": "Nov 1",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Music and Marks: Performance with a Woodwind Trio from Manhattan School of Music November 1 @ 10:30 am - 12:00 pm Inside Art Join musicians from Manhattan School of Music for a celebratory performance inspired by reaching for your dreams! Move around to some new tunes and some familiar and make drawings or congratulatory signs!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/music-and-marks-performance-with-a-woodwind-trio-from-manhattan-school-of-music/",
       "image": ""
     }
   ]
