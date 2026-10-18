@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T06:36:28-04:00",
+  "updated_at": "2026-10-18T18:33:46-04:00",
   "events": [
     {
       "title": "Workshop: Dance with the Fauns and Fairies from The Dream with American Ballet Theatre (ABT)",
@@ -799,6 +799,86 @@
       "description": "Music and Marks: Performance with a Woodwind Trio from Manhattan School of Music November 1 @ 10:30 am - 12:00 pm Inside Art Join musicians from Manhattan School of Music for a celebratory performance inspired by reaching for your dreams! Move around to some new tunes and some familiar and make drawings or congratulatory signs!",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/music-and-marks-performance-with-a-woodwind-trio-from-manhattan-school-of-music/",
+      "image": ""
+    },
+    {
+      "title": "Goal Getter Medals",
+      "date": "2026-11-01",
+      "date_label": "Nov 1",
+      "time": "11:15 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Goal Getter Medals November 1 @ 11:15 am - 12:15 pm Goal Getter Medals PlayWorks Decorate a cardboard circle with numbers, letters, and colors that represent you! Attach pieces of metallic tissue paper to your medal and wear it with pride!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/goal-getter-medals/2026-11-01/1/",
+      "image": ""
+    },
+    {
+      "title": "Mini Marathon Runners",
+      "date": "2026-11-01",
+      "date_label": "Nov 1",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Mini Marathon Runners November 1 @ 2:00 pm - 4:15 pm Mini Marathon Runners Makerspace Sculpt a mini runner along with a mini uniform with your lucky number on it. Make a friend at the museum and run alongside them to the finish on our … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/mini-marathon-runners/2026-11-01/2/",
+      "image": ""
+    },
+    {
+      "title": "Goal Getter Medals",
+      "date": "2026-11-01",
+      "date_label": "Nov 1",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Goal Getter Medals November 1 @ 2:45 pm - 3:45 pm Goal Getter Medals PlayWorks Decorate a cardboard circle with numbers, letters, and colors that represent you! Attach pieces of metallic tissue paper to your medal and wear it with pride!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/goal-getter-medals/2026-11-01/2/",
+      "image": ""
+    },
+    {
+      "title": "Unicorns for President! Dragons for Mayor!",
+      "date": "2026-11-03",
+      "date_label": "Nov 3",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Unicorns for President! Dragons for Mayor! November 3 @ 10:30 am - 12:30 pm Unicorns for President! Dragons for Mayor! Makerspace Design dazzling wearable badges supporting your favorite mystical creature–unicorns or dragons!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/unicorns-for-president-dragons-for-mayor/2026-11-03/1/",
+      "image": ""
+    },
+    {
+      "title": "“I Voted” Sticker Design",
+      "date": "2026-11-03",
+      "date_label": "Nov 3",
+      "time": "11:15 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Art",
+      "price_type": "paid",
+      "description": "“I Voted” Sticker Design November 3 @ 11:15 am - 12:15 pm “I Voted” Sticker Design PlayWorks Stop by our ballot box and vote for your favorite shape. After you cast a vote, use drawing tools to design your own \"I voted\" sticker!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/i-voted-sticker-design/2026-11-03/1/",
       "image": ""
     }
   ]
