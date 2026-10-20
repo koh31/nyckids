@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T06:39:24-04:00",
+  "updated_at": "2026-10-20T18:37:07-04:00",
   "events": [
     {
       "title": "Cozy Strechy Web Installation",
@@ -799,6 +799,54 @@
       "description": "“I Voted” Sticker Design November 3 @ 11:15 am - 12:15 pm “I Voted” Sticker Design PlayWorks Stop by our ballot box and vote for your favorite shape. After you cast a vote, use drawing tools to design your own \"I voted\" sticker!",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/i-voted-sticker-design/2026-11-03/1/",
+      "image": ""
+    },
+    {
+      "title": "Unicorns for President! Dragons for Mayor!",
+      "date": "2026-11-03",
+      "date_label": "Nov 3",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Unicorns for President! Dragons for Mayor! November 3 @ 2:00 pm - 4:15 pm Unicorns for President! Dragons for Mayor! Makerspace Design dazzling wearable badges supporting your favorite mystical creature–unicorns or dragons!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/unicorns-for-president-dragons-for-mayor/2026-11-03/2/",
+      "image": ""
+    },
+    {
+      "title": "“I Voted” Sticker Design",
+      "date": "2026-11-03",
+      "date_label": "Nov 3",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Art",
+      "price_type": "paid",
+      "description": "“I Voted” Sticker Design November 3 @ 2:45 pm - 3:45 pm “I Voted” Sticker Design PlayWorks Stop by our ballot box and vote for your favorite shape. After you cast a vote, use drawing tools to design your own \"I voted\" sticker!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/i-voted-sticker-design/2026-11-03/2/",
+      "image": ""
+    },
+    {
+      "title": "Friends On My Block Bracelets",
+      "date": "2026-11-04",
+      "date_label": "Nov 4",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Friends On My Block Bracelets November 4 @ 10:30 am - 12:30 pm Friends On My Block Bracelets How are you a good neighbor and helper? How can you show a friend you appreciate them? Mix and match fun beads and kind words on a bracelet to give to a friend. Don't forget to make one for yourself to match!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/friends-on-my-block-bracelets/2026-11-04/1/",
       "image": ""
     }
   ]
