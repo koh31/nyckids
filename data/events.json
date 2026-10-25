@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T06:37:34-04:00",
+  "updated_at": "2026-10-25T18:33:21-04:00",
   "events": [
     {
       "title": "Cozy Strechy Web Installation",
@@ -690,6 +690,22 @@
       "image": ""
     },
     {
+      "title": "Portrait of a Friend",
+      "date": "2026-11-07",
+      "date_label": "Nov 7",
+      "time": "11:15 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Art",
+      "price_type": "paid",
+      "description": "Portrait of a Friend November 7 @ 11:15 am - 12:15 pm Portrait of a Friend PlayWorks Who is your friend? Use different drawing tools and collage materials to make a portrait of someone special to you!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/portrait-of-a-friend/2026-11-07/1/",
+      "image": ""
+    },
+    {
       "title": "Friends On My Block Bracelets",
       "date": "2026-11-07",
       "date_label": "Nov 7",
@@ -703,6 +719,22 @@
       "description": "Friends On My Block Bracelets November 7 @ 2:00 pm - 4:15 pm Friends On My Block Bracelets How are you a good neighbor and helper? How can you show a friend you appreciate them? Mix and match fun beads and kind words on a bracelet to give to a friend. Don't forget to make one for yourself to match!",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/friends-on-my-block-bracelets/2026-11-07/",
+      "image": ""
+    },
+    {
+      "title": "Portrait of a Friend",
+      "date": "2026-11-07",
+      "date_label": "Nov 7",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Art",
+      "price_type": "paid",
+      "description": "Portrait of a Friend November 7 @ 2:45 pm - 3:45 pm Portrait of a Friend PlayWorks Who is your friend? Use different drawing tools and collage materials to make a portrait of someone special to you!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/portrait-of-a-friend/2026-11-07/2/",
       "image": ""
     },
     {
@@ -815,6 +847,86 @@
       "description": "Glowing Paper Sky Lamps November 10 @ 10:30 am - 12:30 pm Glowing Lantern Design Makerspace Explore how light can symbolize joy, hope, and new beginnings by creating glowing paper sky lamps using translucent paper, recycled materials, metallic collage pieces, and colorful patterns inspired by rangoli … Continued",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/glowing-lantern-design/2026-11-10/1/",
+      "image": ""
+    },
+    {
+      "title": "Glowing Paper Sky Lamps",
+      "date": "2026-11-10",
+      "date_label": "Nov 10",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Glowing Paper Sky Lamps November 10 @ 2:00 pm - 4:15 pm Glowing Lantern Design Makerspace Explore how light can symbolize joy, hope, and new beginnings by creating glowing paper sky lamps using translucent paper, recycled materials, metallic collage pieces, and colorful patterns inspired by rangoli … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/glowing-lantern-design/2026-11-10/2/",
+      "image": ""
+    },
+    {
+      "title": "Tissue Paper Rangoli Inspired Collage",
+      "date": "2026-11-10",
+      "date_label": "Nov 10",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Tissue Paper Rangoli Inspired Collage November 10 @ 2:45 pm - 3:45 pm Tissue Paper Rangoli Inspired Collage PlayWorks Tear and glue pieces of vibrant colored tissue paper together to create a Rangoli design. What colors will you add to your Rangoli to celebrate Diwali?",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/tissue-paper-rangoli-inspired-collage/2026-11-10/",
+      "image": ""
+    },
+    {
+      "title": "Postcards of Thanks",
+      "date": "2026-11-11",
+      "date_label": "Nov 11",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Art",
+      "price_type": "paid",
+      "description": "Postcards of Thanks November 11 @ 10:30 am - 12:30 pm Postcards of Thanks Inside Art Create thoughtful postcards and illustrated messages to celebrate helpers, caregivers, veterans, and community members who support others.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/postcards-of-thanks/2026-11-11/1/",
+      "image": ""
+    },
+    {
+      "title": "Drawing My Uniform",
+      "date": "2026-11-11",
+      "date_label": "Nov 11",
+      "time": "11:15 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Art",
+      "price_type": "paid",
+      "description": "Drawing My Uniform November 11 @ 11:15 am - 12:15 pm Drawing My Uniform Each veteran wears a special uniform. Use different drawing tools to draw a unique uniform design!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/drawing-my-uniform/2026-11-11/1/",
+      "image": ""
+    },
+    {
+      "title": "Postcards of Thanks",
+      "date": "2026-11-11",
+      "date_label": "Nov 11",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Art",
+      "price_type": "paid",
+      "description": "Postcards of Thanks November 11 @ 2:00 pm - 4:15 pm Postcards of Thanks Inside Art Create thoughtful postcards and illustrated messages to celebrate helpers, caregivers, veterans, and community members who support others.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/postcards-of-thanks/2026-11-11/2/",
       "image": ""
     }
   ]
