@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T06:47:38-04:00",
+  "updated_at": "2026-10-26T18:39:54-04:00",
   "events": [
     {
       "title": "Silly Hands & Fuzzy Fingers Dress Up",
@@ -370,6 +370,22 @@
       "image": ""
     },
     {
+      "title": "My Favorite Shape: Poster Design",
+      "date": "2026-11-03",
+      "date_label": "Nov 3",
+      "time": "11:15 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Art",
+      "price_type": "paid",
+      "description": "My Favorite Shape: Poster Design November 3 @ 11:15 am - 12:15 pm “I Voted” Sticker Design PlayWorks Stop by our ballot box and vote for your favorite shape. After you cast a vote, use drawing tools to design your own \"I voted\" sticker!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/i-voted-sticker-design/2026-11-03/1/",
+      "image": ""
+    },
+    {
       "title": "“I Voted” Sticker Design",
       "date": "2026-11-03",
       "date_label": "Nov 3",
@@ -399,6 +415,22 @@
       "description": "Unicorns for President! Dragons for Mayor! November 3 @ 2:00 pm - 4:15 pm Unicorns for President! Dragons for Mayor! Makerspace Design dazzling wearable badges supporting your favorite mystical creature–unicorns or dragons!",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/unicorns-for-president-dragons-for-mayor/2026-11-03/2/",
+      "image": ""
+    },
+    {
+      "title": "My Favorite Shape: Poster Design",
+      "date": "2026-11-03",
+      "date_label": "Nov 3",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Art",
+      "price_type": "paid",
+      "description": "My Favorite Shape: Poster Design November 3 @ 2:45 pm - 3:45 pm “I Voted” Sticker Design PlayWorks Stop by our ballot box and vote for your favorite shape. After you cast a vote, use drawing tools to design your own \"I voted\" sticker!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/i-voted-sticker-design/2026-11-03/2/",
       "image": ""
     },
     {
