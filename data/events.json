@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T06:44:40-04:00",
+  "updated_at": "2026-10-27T18:40:45-04:00",
   "events": [
     {
       "title": "Silly Hands & Fuzzy Fingers Dress Up",
@@ -847,6 +847,54 @@
       "description": "Postcards of Thanks November 11 @ 2:00 pm - 4:15 pm Postcards of Thanks Inside Art Create thoughtful postcards and illustrated messages to celebrate helpers, caregivers, veterans, and community members who support others.",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/postcards-of-thanks/2026-11-11/2/",
+      "image": ""
+    },
+    {
+      "title": "Drawing My Uniform",
+      "date": "2026-11-11",
+      "date_label": "Nov 11",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Art",
+      "price_type": "paid",
+      "description": "Drawing My Uniform November 11 @ 2:45 pm - 3:45 pm Drawing My Uniform Each veteran wears a special uniform. Use different drawing tools to draw a unique uniform design!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/drawing-my-uniform/2026-11-11/2/",
+      "image": ""
+    },
+    {
+      "title": "Story Blanket Collage",
+      "date": "2026-11-12",
+      "date_label": "Nov 12",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Story Blanket Collage November 12 @ 10:30 am - 12:30 pm Story Blanket Collage Inspired by storytelling traditions and textile arts, create layered collage “story blankets” using fabric, stamps, paper, and symbolic imagery to tell stories about home, nature, family, and community.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/story-blanket-collage/2026-11-12/1/",
+      "image": ""
+    },
+    {
+      "title": "Story Blanket Collage",
+      "date": "2026-11-12",
+      "date_label": "Nov 12",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Story Blanket Collage November 12 @ 2:00 pm - 4:15 pm Story Blanket Collage Inspired by storytelling traditions and textile arts, create layered collage “story blankets” using fabric, stamps, paper, and symbolic imagery to tell stories about home, nature, family, and community.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/story-blanket-collage/2026-11-12/2/",
       "image": ""
     }
   ]
