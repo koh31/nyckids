@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T06:53:14-04:00",
+  "updated_at": "2026-10-29T18:47:03-04:00",
   "events": [
     {
       "title": "Silly Hands & Fuzzy Fingers Dress Up",
@@ -498,6 +498,22 @@
       "image": ""
     },
     {
+      "title": "Performance with New York Children’s Theater: Woody Guthrie’s Songs to Grow On",
+      "date": "2026-11-07",
+      "date_label": "Nov 7",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Performance with New York Children’s Theater: Woody Guthrie’s Songs to Grow On November 7 @ 10:30 am - 12:00 pm Inside Art Retracing Woody Guthrie’s travels from California to “the New York Island,” the audience takes a musical journey filled with interactive play, storytelling, and live engagement.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/performance-woody-guthries-songs-to-grow-on/",
+      "image": ""
+    },
+    {
       "title": "Performance: Woody Guthrie’s Songs to Grow On",
       "date": "2026-11-07",
       "date_label": "Nov 7",
@@ -847,6 +863,54 @@
       "description": "Story Blanket Collage November 13 @ 2:00 pm - 4:15 pm Story Blanket Collage Inspired by storytelling traditions and textile arts, create layered collage “story blankets” using fabric, stamps, paper, and symbolic imagery to tell stories about home, nature, family, and community.",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/story-blanket-collage/2026-11-13/2/",
+      "image": ""
+    },
+    {
+      "title": "Trackers and Gatherers Sensory Bin",
+      "date": "2026-11-13",
+      "date_label": "Nov 13",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Trackers and Gatherers Sensory Bin November 13 @ 2:45 pm - 3:45 pm Trackers and Gatherers Sensory Bin PlayWorks Search for tracks in the soil. What animal made those tracks? Explore the sensory bin as you gather natural elements and use baskets to sort your findings!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/trackers-and-gatherers-sensory-bin-2/2026-11-13/",
+      "image": ""
+    },
+    {
+      "title": "Author Event: The Ones Who Came Before with Kevin Mallaird and Illustrator Sibu T.P.",
+      "date": "2026-11-14",
+      "date_label": "Nov 14",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Art",
+      "price_type": "paid",
+      "description": "Author Event: The Ones Who Came Before with Kevin Mallaird and Illustrator Sibu T.P. November 14 @ 10:30 am - 11:30 am Inside Art Join author Kevin Mallaird, the award-winning author of Fry Bread, to celebrate the release of his book, The Ones Who Came Before! Join us afterwards for book signings and activities with author Kevin Mallaird and illustrator Sibu T.P.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/author-event-the-ones-who-came-before-with-kevin-mallaird-and-illustrator-sibu-t-p/",
+      "image": ""
+    },
+    {
+      "title": "Trackers and Gatherers Sensory Bin",
+      "date": "2026-11-14",
+      "date_label": "Nov 14",
+      "time": "11:15 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Trackers and Gatherers Sensory Bin November 14 @ 11:15 am - 12:15 pm Trackers and Gatherers Sensory Bin PlayWorks Search for tracks in the soil. What animal made those tracks? Explore the sensory bin as you gather natural elements and use baskets to sort your findings!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/trackers-and-gatherers-sensory-bin-2/2026-11-14/1/",
       "image": ""
     }
   ]
