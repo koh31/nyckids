@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T05:58:39-05:00",
+  "updated_at": "2026-11-03T17:49:49-05:00",
   "events": [
     {
       "title": "Unicorns for President! Dragons for Mayor!",
@@ -253,6 +253,22 @@
       "genre": "Music",
       "price_type": "paid",
       "description": "Performance with New York Children’s Theater: Woody Guthrie’s Songs to Grow On November 7 @ 10:30 am - 12:00 pm Inside Art Retracing Woody Guthrie’s travels from California to “the New York Island,” the audience takes a musical journey filled with interactive play, storytelling, and live engagement.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/performance-woody-guthries-songs-to-grow-on/",
+      "image": ""
+    },
+    {
+      "title": "Performance with New York City Children’s Theater: Woody Guthrie’s Songs to Grow On",
+      "date": "2026-11-07",
+      "date_label": "Nov 7",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Performance with New York City Children’s Theater: Woody Guthrie’s Songs to Grow On November 7 @ 10:30 am - 12:00 pm Inside Art Retracing Woody Guthrie’s travels from California to “the New York Island,” the audience takes a musical journey filled with interactive play, storytelling, and live engagement.",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/performance-woody-guthries-songs-to-grow-on/",
       "image": ""
@@ -738,6 +754,22 @@
       "image": ""
     },
     {
+      "title": "Workshop with Relative Arts",
+      "date": "2026-11-15",
+      "date_label": "Nov 15",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Workshop",
+      "price_type": "paid",
+      "description": "Workshop with Relative Arts November 15 @ 2:00 pm - 3:00 pm Inside Art Join Liana Shewey (Mvskoke) of Relative Arts, an Indigenous-owned creative space, retail shop, and cultural hub in New York City's East Village, for an interactive workshop!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/workshop-with-relative-arts/",
+      "image": ""
+    },
+    {
       "title": "Trackers and Gatherers Sensory Bin",
       "date": "2026-11-15",
       "date_label": "Nov 15",
@@ -847,6 +879,54 @@
       "description": "Autumn Painting November 18 @ 2:45 pm - 3:45 pm Autumn Painting PlayWorks What colors do you see during autumn? Apply warm colors of paint to paper using painting tools to create an autumn scene!",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/autumn-painting/2026-11-18/",
+      "image": ""
+    },
+    {
+      "title": "Playful Pinecone Sculptures",
+      "date": "2026-11-19",
+      "date_label": "Nov 19",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Playful Pinecone Sculptures November 19 @ 10:30 am - 12:30 pm Playful Pinecone Sculptures Makerspace It’s the season to be grateful for our friends and family! Create a fall critter friend out of pinecones, twigs, leaves, and other fun natural materials and gift it to … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/playful-pinecone-sculptures/2026-11-19/1/",
+      "image": ""
+    },
+    {
+      "title": "Playful Pinecone Sculptures",
+      "date": "2026-11-19",
+      "date_label": "Nov 19",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Playful Pinecone Sculptures November 19 @ 2:00 pm - 4:15 pm Playful Pinecone Sculptures Makerspace It’s the season to be grateful for our friends and family! Create a fall critter friend out of pinecones, twigs, leaves, and other fun natural materials and gift it to … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/playful-pinecone-sculptures/2026-11-19/2/",
+      "image": ""
+    },
+    {
+      "title": "Autumn Painting",
+      "date": "2026-11-19",
+      "date_label": "Nov 19",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Autumn Painting November 19 @ 2:45 pm - 3:45 pm Autumn Painting PlayWorks What colors do you see during autumn? Apply warm colors of paint to paper using painting tools to create an autumn scene!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/autumn-painting/2026-11-19/",
       "image": ""
     }
   ]
