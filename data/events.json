@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T12:28:13-05:00",
+  "updated_at": "2026-11-06T20:53:48-05:00",
   "events": [
     {
       "title": "Friends On My Block Bracelets",
@@ -466,6 +466,22 @@
       "image": ""
     },
     {
+      "title": "Author Event: The Ones Who Came Before with Kevin Maillard and Illustrator Sibu T.P.",
+      "date": "2026-11-14",
+      "date_label": "Nov 14",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Art",
+      "price_type": "paid",
+      "description": "Author Event: The Ones Who Came Before with Kevin Maillard and Illustrator Sibu T.P. November 14 @ 10:30 am - 11:30 am Inside Art Join author Kevin Mallaird, the award-winning author of Fry Bread, to celebrate the release of his book, The Ones Who Came Before! Join us afterwards for book signings and activities with author Kevin Mallaird and illustrator Sibu T.P.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/author-event-the-ones-who-came-before-with-kevin-mallaird-and-illustrator-sibu-t-p/",
+      "image": "https://cmom.org/wp-content/uploads/2026/10/11.14.26_Square_Author_Kevin-Mallaird_November-26.png"
+    },
+    {
       "title": "Author Event: The Ones Who Came Before with Kevin Mallaird and Illustrator Sibu T.P.",
       "date": "2026-11-14",
       "date_label": "Nov 14",
@@ -847,6 +863,54 @@
       "description": "Autumn Painting November 20 @ 2:45 pm - 3:45 pm Autumn Painting PlayWorks What colors do you see during autumn? Apply warm colors of paint to paper using painting tools to create an autumn scene!",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/autumn-painting/2026-11-20/",
+      "image": ""
+    },
+    {
+      "title": "Workshop with the New Victory Theater: Tilt! An 80’s Circus Thrill Ride",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "time": "10:00 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Performance",
+      "price_type": "paid",
+      "description": "Workshop with the New Victory Theater: Tilt! An 80’s Circus Thrill Ride November 21 @ 10:00 am - 12:30 pm Makerspace Join us for a special workshop and activities inspired by the performance Tilt! An ’80s Circus Thrill Ride.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/workshop-with-the-new-victory-theater-tilt-an-80s-circus-thrill-ride/",
+      "image": ""
+    },
+    {
+      "title": "Autumn Painting",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "time": "11:15 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Autumn Painting November 21 @ 11:15 am - 12:15 pm Autumn Painting PlayWorks What colors do you see during autumn? Apply warm colors of paint to paper using painting tools to create an autumn scene!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/autumn-painting/2026-11-21/1/",
+      "image": "https://cmom.org/wp-content/uploads/2026/05/A7402581_11zon.webp"
+    },
+    {
+      "title": "Workshop: Cooking Lesson with Harlem Grown",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "time": "1:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Workshop",
+      "price_type": "paid",
+      "description": "Workshop: Cooking Lesson with Harlem Grown November 21 @ 1:00 pm - 1:45 pm Workshop: Cooking Lesson with Harlem Grown PlayWorks Classroom Children and families will join Harlem Grown Chef educator Sasha Dubose for a hands- on cooking lesson, at the Children's Museum of Manhattan. Participants will practice basic cooking skills, explore recipe … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/workshop-cooking-lesson-with-harlem-grown/2026-11-21/1/",
       "image": ""
     }
   ]
