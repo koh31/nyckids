@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T11:24:07-05:00",
+  "updated_at": "2026-11-07T20:24:59-05:00",
   "events": [
     {
       "title": "Performance with New York Children’s Theater: Woody Guthrie’s Songs to Grow On",
@@ -863,6 +863,70 @@
       "description": "Workshop: Cooking Lesson with Harlem Grown November 21 @ 1:00 pm - 1:45 pm Workshop: Cooking Lesson with Harlem Grown PlayWorks Classroom Children and families will join Harlem Grown Chef educator Sasha Dubose for a hands- on cooking lesson, at the Children's Museum of Manhattan. Participants will practice basic cooking skills, explore recipe … Continued",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/workshop-cooking-lesson-with-harlem-grown/2026-11-21/1/",
+      "image": ""
+    },
+    {
+      "title": "Workshop: Cooking Lesson with Harlem Grown",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Workshop",
+      "price_type": "paid",
+      "description": "Workshop: Cooking Lesson with Harlem Grown November 21 @ 2:00 pm - 2:45 pm Workshop: Cooking Lesson with Harlem Grown PlayWorks Classroom Children and families will join Harlem Grown Chef educator Sasha Dubose for a hands- on cooking lesson, at the Children's Museum of Manhattan. Participants will practice basic cooking skills, explore recipe … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/workshop-cooking-lesson-with-harlem-grown/2026-11-21/2/",
+      "image": ""
+    },
+    {
+      "title": "Autumn Painting",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Autumn Painting November 21 @ 2:45 pm - 3:45 pm Autumn Painting PlayWorks What colors do you see during autumn? Apply warm colors of paint to paper using painting tools to create an autumn scene!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/autumn-painting/2026-11-21/2/",
+      "image": "https://cmom.org/wp-content/uploads/2026/05/A7402581_11zon.webp"
+    },
+    {
+      "title": "Author Storytime with Special Guests: Between the Balloons with Artist E.A. KAHANE and Tom Toro for Aperture Kids",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "time": "3:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Storytime",
+      "price_type": "paid",
+      "description": "Author Storytime with Special Guests: Between the Balloons with Artist E.A. KAHANE and Tom Toro for Aperture Kids November 21 @ 3:00 pm - 4:00 pm Inside Art Larger-than-life balloon characters, marching bands, and delightful surprises fill every page of this magical take on the famed Thanksgiving Day Parade. Let your imagination fly after the reading with an artmaking activity!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/alphies-goodbye-storytime-with-special-guests-between-the-balloons-with-artist-e-a-kahane-and-tom-toro-for-aperture-kids/",
+      "image": ""
+    },
+    {
+      "title": "Workshop with the Whitney Museum Pop-Up Open Studio: Roy Lichtenstein",
+      "date": "2026-11-22",
+      "date_label": "Nov 22",
+      "time": "10:00 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Workshop",
+      "price_type": "paid",
+      "description": "Workshop with the Whitney Museum Pop-Up Open Studio: Roy Lichtenstein November 22 @ 10:00 am - 5:00 pm Inside Art You are invited to join us for a special pop-up Whitney Open Studio at CMOM, celebrating the pop artist Roy Lichtenstein and the Whitney’s retrospective Roy Lichtenstein: Like New. Whitney … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/workshop-with-the-whitney-museum-pop-up-open-studio-roy-lichtenstein/",
       "image": ""
     }
   ]
