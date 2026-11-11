@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T12:46:43-05:00",
+  "updated_at": "2026-11-10T20:54:52-05:00",
   "events": [
     {
       "title": "Glowing Paper Sky Lamps",
@@ -847,6 +847,38 @@
       "description": "Thankful Pie Patch Placemats November 24 @ 2:00 pm - 4:15 pm Thankful Pie Patch Placemats Makerspace Create playful pretend pie placemats from felt, burlap, yarn, pom-poms, and soft materials while exploring favorite foods, family recipes, and holiday traditions.",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/thankful-pie-patch-placemats/2026-11-24/2/",
+      "image": ""
+    },
+    {
+      "title": "The People We Are Thankful For",
+      "date": "2026-11-24",
+      "date_label": "Nov 24",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "The People We Are Thankful For November 24 @ 2:45 pm - 3:45 pm The People We Are Thankful For PlayWorks Draw details on small paper people cutouts. Use a pipe cleaner to string the people together and make a banner that represents the people you are thankful for.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/the-people-we-are-thankful-for/2026-11-24/",
+      "image": ""
+    },
+    {
+      "title": "Thankful Pie Patch Placemats",
+      "date": "2026-11-25",
+      "date_label": "Nov 25",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Thankful Pie Patch Placemats November 25 @ 10:30 am - 12:30 pm Thankful Pie Patch Placemats Makerspace Create playful pretend pie placemats from felt, burlap, yarn, pom-poms, and soft materials while exploring favorite foods, family recipes, and holiday traditions.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/thankful-pie-patch-placemats/2026-11-25/1/",
       "image": ""
     }
   ]
