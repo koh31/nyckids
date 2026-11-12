@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T12:52:36-05:00",
+  "updated_at": "2026-11-11T21:56:15-05:00",
   "events": [
     {
       "title": "Postcards of Thanks",
@@ -863,6 +863,38 @@
       "description": "The People We Are Thankful For November 25 @ 2:45 pm - 3:45 pm The People We Are Thankful For PlayWorks Draw details on small paper people cutouts. Use a pipe cleaner to string the people together and make a banner that represents the people you are thankful for.",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/the-people-we-are-thankful-for/2026-11-25/",
+      "image": ""
+    },
+    {
+      "title": "Museum Closed",
+      "date": "2026-11-26",
+      "date_label": "Nov 26",
+      "time": "",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Museum Closed November 26 Closure",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/museum-closed-11262026/",
+      "image": ""
+    },
+    {
+      "title": "Performance: The Good Ms. Padgett and Friends!",
+      "date": "2026-11-27",
+      "date_label": "Nov 27",
+      "time": "11:00 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Performance: The Good Ms. Padgett and Friends! November 27 @ 11:00 am - 11:30 am Performance: The Good Ms. Padgett and Friends! Inside Art If We Must We Must is an infectious collection of uninhibited songs that effortlessly traverse the diverse terrain of childhood. Lollipops, monsters, singing rabbits, and bedtime are addressed in lovely lullabies and raucous rock jams. The Good Ms Padgett is joined by her daughter Penelope as well as many special guests, both young and older.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/performance-the-good-ms-padgett-and-friends/2026-11-27/1/",
       "image": ""
     }
   ]
