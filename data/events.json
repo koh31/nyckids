@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T13:15:43-05:00",
+  "updated_at": "2026-11-12T21:36:42-05:00",
   "events": [
     {
       "title": "Story Blanket Collage",
@@ -847,6 +847,38 @@
       "description": "The People We Are Thankful For November 27 @ 11:15 am - 12:15 pm The People We Are Thankful For PlayWorks Draw details on small paper people cutouts. Use a pipe cleaner to string the people together and make a banner that represents the people you are thankful for.",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/the-people-we-are-thankful-for/2026-11-27/1/",
+      "image": ""
+    },
+    {
+      "title": "Performance: The Good Ms. Padgett and Friends!",
+      "date": "2026-11-27",
+      "date_label": "Nov 27",
+      "time": "12:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Performance: The Good Ms. Padgett and Friends! November 27 @ 12:00 pm - 12:30 pm Performance: The Good Ms. Padgett and Friends! Inside Art If We Must We Must is an infectious collection of uninhibited songs that effortlessly traverse the diverse terrain of childhood. Lollipops, monsters, singing rabbits, and bedtime are addressed in lovely lullabies and raucous rock jams. The Good Ms Padgett is joined by her daughter Penelope as well as many special guests, both young and older.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/performance-the-good-ms-padgett-and-friends/2026-11-27/2/",
+      "image": ""
+    },
+    {
+      "title": "Thankful Pie Patch Placemats",
+      "date": "2026-11-27",
+      "date_label": "Nov 27",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Thankful Pie Patch Placemats November 27 @ 2:00 pm - 4:15 pm Thankful Pie Patch Placemats Makerspace Create playful pretend pie placemats from felt, burlap, yarn, pom-poms, and soft materials while exploring favorite foods, family recipes, and holiday traditions.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/thankful-pie-patch-placemats/2026-11-27/",
       "image": ""
     }
   ]
