@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-11-12T21:36:42-05:00",
+  "updated_at": "2026-11-13T12:42:43-05:00",
   "events": [
-    {
-      "title": "Story Blanket Collage",
-      "date": "2026-11-12",
-      "date_label": "Nov 12",
-      "time": "10:30 am",
-      "area": "Manhattan",
-      "borough": "Manhattan",
-      "venue": "Children's Museum of Manhattan",
-      "age_group": "0-5",
-      "genre": "Music",
-      "price_type": "paid",
-      "description": "Story Blanket Collage November 12 @ 10:30 am - 12:30 pm Story Blanket Collage Inspired by storytelling traditions and textile arts, create layered collage “story blankets” using fabric, stamps, paper, and symbolic imagery to tell stories about home, nature, family, and community.",
-      "source": "Children's Museum of Manhattan",
-      "url": "https://cmom.org/event/story-blanket-collage/2026-11-12/1/",
-      "image": ""
-    },
-    {
-      "title": "Story Blanket Collage",
-      "date": "2026-11-12",
-      "date_label": "Nov 12",
-      "time": "2:00 pm",
-      "area": "Manhattan",
-      "borough": "Manhattan",
-      "venue": "Children's Museum of Manhattan",
-      "age_group": "0-5",
-      "genre": "Music",
-      "price_type": "paid",
-      "description": "Story Blanket Collage November 12 @ 2:00 pm - 4:15 pm Story Blanket Collage Inspired by storytelling traditions and textile arts, create layered collage “story blankets” using fabric, stamps, paper, and symbolic imagery to tell stories about home, nature, family, and community.",
-      "source": "Children's Museum of Manhattan",
-      "url": "https://cmom.org/event/story-blanket-collage/2026-11-12/2/",
-      "image": ""
-    },
-    {
-      "title": "Trackers and Gatherers Sensory Bin",
-      "date": "2026-11-12",
-      "date_label": "Nov 12",
-      "time": "2:45 pm",
-      "area": "Manhattan",
-      "borough": "Manhattan",
-      "venue": "Children's Museum of Manhattan",
-      "age_group": "0-5",
-      "genre": "Other",
-      "price_type": "paid",
-      "description": "Trackers and Gatherers Sensory Bin November 12 @ 2:45 pm - 3:45 pm Trackers and Gatherers Sensory Bin PlayWorks Search for tracks in the soil. What animal made those tracks? Explore the sensory bin as you gather natural elements and use baskets to sort your findings!",
-      "source": "Children's Museum of Manhattan",
-      "url": "https://cmom.org/event/trackers-and-gatherers-sensory-bin-2/2026-11-12/",
-      "image": ""
-    },
     {
       "title": "Story Blanket Collage",
       "date": "2026-11-13",
@@ -880,6 +832,22 @@
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/thankful-pie-patch-placemats/2026-11-27/",
       "image": ""
+    },
+    {
+      "title": "The People We Are Thankful For",
+      "date": "2026-11-27",
+      "date_label": "Nov 27",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "The People We Are Thankful For November 27 @ 2:45 pm - 3:45 pm The People We Are Thankful For PlayWorks Draw details on small paper people cutouts. Use a pipe cleaner to string the people together and make a banner that represents the people you are thankful for.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/the-people-we-are-thankful-for/2026-11-27/2/",
+      "image": "https://cmom.org/wp-content/uploads/2026/09/ThePeopleWeAreThankfulFor-e1794519571178.jpg"
     }
   ]
 }
