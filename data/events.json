@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T12:42:43-05:00",
+  "updated_at": "2026-11-13T21:23:06-05:00",
   "events": [
     {
       "title": "Story Blanket Collage",
@@ -847,6 +847,38 @@
       "description": "The People We Are Thankful For November 27 @ 2:45 pm - 3:45 pm The People We Are Thankful For PlayWorks Draw details on small paper people cutouts. Use a pipe cleaner to string the people together and make a banner that represents the people you are thankful for.",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/the-people-we-are-thankful-for/2026-11-27/2/",
+      "image": "https://cmom.org/wp-content/uploads/2026/09/ThePeopleWeAreThankfulFor-e1794519571178.jpg"
+    },
+    {
+      "title": "Music and Marks Performance and Artmaking: Juilliard Performers",
+      "date": "2026-11-28",
+      "date_label": "Nov 28",
+      "time": "11:00 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Music and Marks Performance and Artmaking: Juilliard Performers November 28 @ 11:00 am - 11:30 am Music and Marks Performance and Artmaking: Juilliard Performers Inside Art Join Hire Juilliard Performers for an exciting performance with soulful jazz vocalist Julia Smulson and guitar accompaniment by Aaron Matson! Make your own marks and artworks along with the changing tempos of the music and reflect on all you’re grateful for!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/music-and-marks-performance-and-artmaking-juilliard-performers/2026-11-28/1/",
+      "image": ""
+    },
+    {
+      "title": "The People We Are Thankful For",
+      "date": "2026-11-28",
+      "date_label": "Nov 28",
+      "time": "11:15 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "The People We Are Thankful For November 28 @ 11:15 am - 12:15 pm The People We Are Thankful For PlayWorks Draw details on small paper people cutouts. Use a pipe cleaner to string the people together and make a banner that represents the people you are thankful for.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/the-people-we-are-thankful-for/2026-11-28/1/",
       "image": "https://cmom.org/wp-content/uploads/2026/09/ThePeopleWeAreThankfulFor-e1794519571178.jpg"
     }
   ]
