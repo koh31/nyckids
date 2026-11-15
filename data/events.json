@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T11:35:33-05:00",
+  "updated_at": "2026-11-14T20:51:18-05:00",
   "events": [
     {
       "title": "Author Event: The Ones Who Came Before with Kevin Maillard and Illustrator Sibu T.P.",
@@ -847,6 +847,54 @@
       "description": "Music and Marks Performance and Artmaking: Juilliard Performers November 28 @ 12:00 pm - 12:30 pm Music and Marks Performance and Artmaking: Juilliard Performers Inside Art Join Hire Juilliard Performers for an exciting performance with soulful jazz vocalist Julia Smulson and guitar accompaniment by Aaron Matson! Make your own marks and artworks along with the changing … Continued",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/music-and-marks-performance-and-artmaking-juilliard-performers/2026-11-28/2/",
+      "image": ""
+    },
+    {
+      "title": "Thankful Pie Patch Placemats",
+      "date": "2026-11-28",
+      "date_label": "Nov 28",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Thankful Pie Patch Placemats November 28 @ 2:00 pm - 4:15 pm Thankful Pie Patch Placemats Makerspace Create playful pretend pie placemats from felt, burlap, yarn, pom-poms, and soft materials while exploring favorite foods, family recipes, and holiday traditions.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/thankful-pie-patch-placemats/2026-11-28/",
+      "image": ""
+    },
+    {
+      "title": "The People We Are Thankful For",
+      "date": "2026-11-28",
+      "date_label": "Nov 28",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "The People We Are Thankful For November 28 @ 2:45 pm - 3:45 pm The People We Are Thankful For PlayWorks Draw details on small paper people cutouts. Use a pipe cleaner to string the people together and make a banner that represents the people you are thankful for.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/the-people-we-are-thankful-for/2026-11-28/2/",
+      "image": "https://cmom.org/wp-content/uploads/2026/09/ThePeopleWeAreThankfulFor-e1794519571178.jpg"
+    },
+    {
+      "title": "Performance: DIVI ROXX KIDS: A Celebration of Self-Love, Positivity & Hip-Hop",
+      "date": "2026-11-29",
+      "date_label": "Nov 29",
+      "time": "11:00 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Performance: DIVI ROXX KIDS: A Celebration of Self-Love, Positivity & Hip-Hop November 29 @ 11:00 am - 11:30 am Performance: DIVI ROXX KIDS: A Celebration of Self-Love, Positivity & Hip-Hop Inside Art Get ready to dance with 2X Grammy-nominated bassist and songwriter Divinity Roxx whose Divi Roxx Kids experience is an electrifying, family hip-hop concert that blends world-class musicianship with an empowering celebration of confidence and community.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/performance-divi-roxx-kids-a-celebration-of-self-love-positivity-hip-hop/2026-11-29/1/",
       "image": ""
     }
   ]
