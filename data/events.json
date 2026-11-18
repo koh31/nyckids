@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T14:10:01-05:00",
+  "updated_at": "2026-11-17T22:42:14-05:00",
   "events": [
     {
       "title": "Playful Pinecone Sculptures",
@@ -831,6 +831,38 @@
       "description": "Snowy City Collage December 1 @ 2:45 pm - 3:45 pm Snowy City Collage PlayWorks Create a bustling snowy scene inspired by recycled picture books!",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/snowy-city-collage/2026-12-01/",
+      "image": ""
+    },
+    {
+      "title": "Winter Wooden Cottage Scenes",
+      "date": "2026-12-02",
+      "date_label": "Dec 2",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Winter Wooden Cottage Scenes December 2 @ 10:30 am - 12:30 pm Winter Wooden Cottage Scenes Makerspace Practice fine motor skills and storytelling by turning a wooden house into a detailed mini cottage scene.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/winter-wooden-cottage-scenes/2026-12-02/1/",
+      "image": ""
+    },
+    {
+      "title": "Winter Wooden Cottage Scenes",
+      "date": "2026-12-02",
+      "date_label": "Dec 2",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Winter Wooden Cottage Scenes December 2 @ 2:00 pm - 4:15 pm Winter Wooden Cottage Scenes Makerspace Practice fine motor skills and storytelling by turning a wooden house into a detailed mini cottage scene.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/winter-wooden-cottage-scenes/2026-12-02/2/",
       "image": ""
     }
   ]
