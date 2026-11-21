@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-11-20T22:11:35-05:00",
+  "updated_at": "2026-11-21T12:27:40-05:00",
   "events": [
-    {
-      "title": "Playful Pinecone Sculptures",
-      "date": "2026-11-20",
-      "date_label": "Nov 20",
-      "time": "10:30 am",
-      "area": "Manhattan",
-      "borough": "Manhattan",
-      "venue": "Children's Museum of Manhattan",
-      "age_group": "0-5",
-      "genre": "Other",
-      "price_type": "paid",
-      "description": "Playful Pinecone Sculptures November 20 @ 10:30 am - 12:30 pm Playful Pinecone Sculptures Makerspace It’s the season to be grateful for our friends and family! Create a fall critter friend out of pinecones, twigs, leaves, and other fun natural materials and gift it to … Continued",
-      "source": "Children's Museum of Manhattan",
-      "url": "https://cmom.org/event/playful-pinecone-sculptures/2026-11-20/1/",
-      "image": ""
-    },
-    {
-      "title": "Playful Pinecone Sculptures",
-      "date": "2026-11-20",
-      "date_label": "Nov 20",
-      "time": "2:00 pm",
-      "area": "Manhattan",
-      "borough": "Manhattan",
-      "venue": "Children's Museum of Manhattan",
-      "age_group": "0-5",
-      "genre": "Other",
-      "price_type": "paid",
-      "description": "Playful Pinecone Sculptures November 20 @ 2:00 pm - 4:15 pm Playful Pinecone Sculptures Makerspace It’s the season to be grateful for our friends and family! Create a fall critter friend out of pinecones, twigs, leaves, and other fun natural materials and gift it to … Continued",
-      "source": "Children's Museum of Manhattan",
-      "url": "https://cmom.org/event/playful-pinecone-sculptures/2026-11-20/2/",
-      "image": ""
-    },
-    {
-      "title": "Autumn Painting",
-      "date": "2026-11-20",
-      "date_label": "Nov 20",
-      "time": "2:45 pm",
-      "area": "Manhattan",
-      "borough": "Manhattan",
-      "venue": "Children's Museum of Manhattan",
-      "age_group": "0-5",
-      "genre": "Music",
-      "price_type": "paid",
-      "description": "Autumn Painting November 20 @ 2:45 pm - 3:45 pm Autumn Painting PlayWorks What colors do you see during autumn? Apply warm colors of paint to paper using painting tools to create an autumn scene!",
-      "source": "Children's Museum of Manhattan",
-      "url": "https://cmom.org/event/autumn-painting/2026-11-20/",
-      "image": ""
-    },
     {
       "title": "Workshop with the New Victory Theater: Tilt! An 80’s Circus Thrill Ride",
       "date": "2026-11-21",
@@ -879,6 +831,22 @@
       "description": "Snowy City Collage December 5 @ 11:15 am - 12:15 pm Snowy City Collage PlayWorks Create a bustling snowy scene inspired by recycled picture books!",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/snowy-city-collage/2026-12-05/1/",
+      "image": ""
+    },
+    {
+      "title": "Snowy City Collage",
+      "date": "2026-12-05",
+      "date_label": "Dec 5",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Snowy City Collage December 5 @ 2:45 pm - 3:45 pm Snowy City Collage PlayWorks Create a bustling snowy scene inspired by recycled picture books!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/snowy-city-collage/2026-12-05/2/",
       "image": ""
     }
   ]
