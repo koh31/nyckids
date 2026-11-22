@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T12:27:40-05:00",
+  "updated_at": "2026-11-21T21:10:57-05:00",
   "events": [
     {
       "title": "Workshop with the New Victory Theater: Tilt! An 80’s Circus Thrill Ride",
@@ -847,6 +847,86 @@
       "description": "Snowy City Collage December 5 @ 2:45 pm - 3:45 pm Snowy City Collage PlayWorks Create a bustling snowy scene inspired by recycled picture books!",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/snowy-city-collage/2026-12-05/2/",
+      "image": ""
+    },
+    {
+      "title": "Dancing Dreidels",
+      "date": "2026-12-06",
+      "date_label": "Dec 6",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Dancing Dreidels December 6 @ 10:30 am - 12:00 pm Dancing Dreidels Design and decorate your own spinning dreidels inspired by winter colors, geometric patterns, and traditions of this Hanukkah game. Experiment with balance, shape, and motion while testing your dreidel designs … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/dancing-dreidels/2026-12-06/",
+      "image": ""
+    },
+    {
+      "title": "Candle Crafting, Menorah Installation, and Hanukkah Puppet Play",
+      "date": "2026-12-06",
+      "date_label": "Dec 6",
+      "time": "11:15 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Performance",
+      "price_type": "paid",
+      "description": "Candle Crafting, Menorah Installation, and Hanukkah Puppet Play December 6 @ 11:15 am - 12:15 pm Candle Crafting, Menorah Installation, and Hanukkah Puppet Play PlayWorks Create your own candle crafts and a collaborative Menorah installation! Play with our puppet theatre with dreidel, menorah, and Hanukkah food puppets! 2026-27 Jewish holiday programs are supported by UJA … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/candle-crafting-menorah-installation-and-hanukkah-puppet-play/2026-12-06/1/",
+      "image": ""
+    },
+    {
+      "title": "Music and Marks Performance and Artmaking: Happy Hanukkah with Meshuganah Mambo!",
+      "date": "2026-12-06",
+      "date_label": "Dec 6",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Music and Marks Performance and Artmaking: Happy Hanukkah with Meshuganah Mambo! December 6 @ 2:00 pm - 2:45 pm Music and Marks Performance and Artmaking: Happy Hanukkah with Meshuganah Mambo! PlayWorks Come for a celebratory Hanukkah experience at CMOM with special artmaking and an exciting performance!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/music-and-marks-performance-and-artmaking-happy-hanukkah-with-meshuganah-mambo/2026-12-06/1/",
+      "image": ""
+    },
+    {
+      "title": "Candle Crafting, Menorah Installation, and Hanukkah Puppet Play",
+      "date": "2026-12-06",
+      "date_label": "Dec 6",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Performance",
+      "price_type": "paid",
+      "description": "Candle Crafting, Menorah Installation, and Hanukkah Puppet Play December 6 @ 2:45 pm - 3:45 pm Candle Crafting, Menorah Installation, and Hanukkah Puppet Play PlayWorks Create your own candle crafts and a collaborative Menorah installation! Play with our puppet theatre with dreidel, menorah, and Hanukkah food puppets! 2026-27 Jewish holiday programs are supported by UJA … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/candle-crafting-menorah-installation-and-hanukkah-puppet-play/2026-12-06/2/",
+      "image": ""
+    },
+    {
+      "title": "Music and Marks Performance and Artmaking: Happy Hanukkah with Meshuganah Mambo!",
+      "date": "2026-12-06",
+      "date_label": "Dec 6",
+      "time": "3:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Music and Marks Performance and Artmaking: Happy Hanukkah with Meshuganah Mambo! December 6 @ 3:00 pm - 3:45 pm Music and Marks Performance and Artmaking: Happy Hanukkah with Meshuganah Mambo! PlayWorks Come for a celebratory Hanukkah experience at CMOM with special artmaking and an exciting performance!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/music-and-marks-performance-and-artmaking-happy-hanukkah-with-meshuganah-mambo/2026-12-06/2/",
       "image": ""
     }
   ]
