@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T12:47:44-05:00",
+  "updated_at": "2026-11-22T21:42:31-05:00",
   "events": [
     {
       "title": "Workshop with the Whitney Museum Pop-Up Open Studio: Roy Lichtenstein",
@@ -834,6 +834,22 @@
       "image": ""
     },
     {
+      "title": "Dancing Dreidels",
+      "date": "2026-12-08",
+      "date_label": "Dec 8",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Dancing Dreidels December 8 @ 10:30 am - 12:00 pm Dancing Dreidels Design and decorate your own spinning dreidels inspired by winter colors, geometric patterns, and traditions of this Hanukkah game. Experiment with balance, shape, and motion while testing your dreidel designs … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/dancing-dreidels/2026-12-08/",
+      "image": ""
+    },
+    {
       "title": "Holiday Circle Time with Benjamin",
       "date": "2026-12-08",
       "date_label": "Dec 8",
@@ -847,6 +863,54 @@
       "description": "Holiday Circle Time with Benjamin December 8 @ 10:30 am - 11:00 am Holiday Circle Time with Benjamin PlayWorks Sing songs in English, Hebrew, and Yiddish with Benjamin!",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/holiday-circle-time-with-benjamin/2026-12-08/",
+      "image": ""
+    },
+    {
+      "title": "Winter Metropolis",
+      "date": "2026-12-08",
+      "date_label": "Dec 8",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Science",
+      "price_type": "paid",
+      "description": "Winter Metropolis December 8 @ 2:00 pm - 4:15 pm Winter Metropolis Inside Art Join us as CMOM transforms into a sprawling winter city entirely created by you! Add to our collaborative installation, by designing glowing decorations, mini architectural sculptures, tiny transportation systems, and … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/winter-metropolis/2026-12-08/",
+      "image": ""
+    },
+    {
+      "title": "Candle Crafting, Menorah Installation, and Hanukkah Puppet Play",
+      "date": "2026-12-08",
+      "date_label": "Dec 8",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Performance",
+      "price_type": "paid",
+      "description": "Candle Crafting, Menorah Installation, and Hanukkah Puppet Play December 8 @ 2:45 pm - 3:45 pm Candle Crafting, Menorah Installation, and Hanukkah Puppet Play PlayWorks Create your own candle crafts and a collaborative Menorah installation! Play with our puppet theatre with dreidel, menorah, and Hanukkah food puppets! 2026-27 Jewish holiday programs are supported by UJA … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/candle-crafting-menorah-installation-and-hanukkah-puppet-play/2026-12-08/",
+      "image": ""
+    },
+    {
+      "title": "Dancing Dreidels",
+      "date": "2026-12-09",
+      "date_label": "Dec 9",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Dancing Dreidels December 9 @ 10:30 am - 12:00 pm Dancing Dreidels Design and decorate your own spinning dreidels inspired by winter colors, geometric patterns, and traditions of this Hanukkah game. Experiment with balance, shape, and motion while testing your dreidel designs … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/dancing-dreidels/2026-12-09/",
       "image": ""
     }
   ]
