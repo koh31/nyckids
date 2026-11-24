@@ -1,22 +1,6 @@
 {
-  "updated_at": "2026-11-23T17:01:35-05:00",
+  "updated_at": "2026-11-24T00:58:12-05:00",
   "events": [
-    {
-      "title": "Museum Closed",
-      "date": "2026-11-23",
-      "date_label": "Nov 23",
-      "time": "",
-      "area": "Manhattan",
-      "borough": "Manhattan",
-      "venue": "Children's Museum of Manhattan",
-      "age_group": "0-5",
-      "genre": "Other",
-      "price_type": "paid",
-      "description": "Museum Closed November 23 Closure",
-      "source": "Children's Museum of Manhattan",
-      "url": "https://cmom.org/event/museum-closed-11232026/",
-      "image": ""
-    },
     {
       "title": "Thankful Pie Patch Placemats",
       "date": "2026-11-24",
@@ -799,6 +783,22 @@
       "description": "Dancing Dreidels December 9 @ 10:30 am - 12:00 pm Dancing Dreidels Design and decorate your own spinning dreidels inspired by winter colors, geometric patterns, and traditions of this Hanukkah game. Experiment with balance, shape, and motion while testing your dreidel designs … Continued",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/dancing-dreidels/2026-12-09/",
+      "image": ""
+    },
+    {
+      "title": "Winter Metropolis",
+      "date": "2026-12-09",
+      "date_label": "Dec 9",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Science",
+      "price_type": "paid",
+      "description": "Winter Metropolis December 9 @ 2:00 pm - 4:15 pm Winter Metropolis Inside Art Join us as CMOM transforms into a sprawling winter city entirely created by you! Add to our collaborative installation, by designing glowing decorations, mini architectural sculptures, tiny transportation systems, and … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/winter-metropolis/2026-12-09/",
       "image": ""
     }
   ]
