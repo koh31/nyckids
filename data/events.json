@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-11-24T23:52:51-05:00",
+  "updated_at": "2026-11-25T14:55:10-05:00",
   "events": [
-    {
-      "title": "Thankful Pie Patch Placemats",
-      "date": "2026-11-24",
-      "date_label": "Nov 24",
-      "time": "10:30 am",
-      "area": "Manhattan",
-      "borough": "Manhattan",
-      "venue": "Children's Museum of Manhattan",
-      "age_group": "0-5",
-      "genre": "Other",
-      "price_type": "paid",
-      "description": "Thankful Pie Patch Placemats November 24 @ 10:30 am - 12:30 pm Thankful Pie Patch Placemats Makerspace Create playful pretend pie placemats from felt, burlap, yarn, pom-poms, and soft materials while exploring favorite foods, family recipes, and holiday traditions.",
-      "source": "Children's Museum of Manhattan",
-      "url": "https://cmom.org/event/thankful-pie-patch-placemats/2026-11-24/1/",
-      "image": ""
-    },
-    {
-      "title": "Thankful Pie Patch Placemats",
-      "date": "2026-11-24",
-      "date_label": "Nov 24",
-      "time": "2:00 pm",
-      "area": "Manhattan",
-      "borough": "Manhattan",
-      "venue": "Children's Museum of Manhattan",
-      "age_group": "0-5",
-      "genre": "Other",
-      "price_type": "paid",
-      "description": "Thankful Pie Patch Placemats November 24 @ 2:00 pm - 4:15 pm Thankful Pie Patch Placemats Makerspace Create playful pretend pie placemats from felt, burlap, yarn, pom-poms, and soft materials while exploring favorite foods, family recipes, and holiday traditions.",
-      "source": "Children's Museum of Manhattan",
-      "url": "https://cmom.org/event/thankful-pie-patch-placemats/2026-11-24/2/",
-      "image": ""
-    },
-    {
-      "title": "The People We Are Thankful For",
-      "date": "2026-11-24",
-      "date_label": "Nov 24",
-      "time": "2:45 pm",
-      "area": "Manhattan",
-      "borough": "Manhattan",
-      "venue": "Children's Museum of Manhattan",
-      "age_group": "0-5",
-      "genre": "Other",
-      "price_type": "paid",
-      "description": "The People We Are Thankful For November 24 @ 2:45 pm - 3:45 pm The People We Are Thankful For PlayWorks Draw details on small paper people cutouts. Use a pipe cleaner to string the people together and make a banner that represents the people you are thankful for.",
-      "source": "Children's Museum of Manhattan",
-      "url": "https://cmom.org/event/the-people-we-are-thankful-for/2026-11-24/",
-      "image": ""
-    },
     {
       "title": "Thankful Pie Patch Placemats",
       "date": "2026-11-25",
@@ -895,6 +847,22 @@
       "description": "Candle Crafting and Hanukkah Puppet Play December 9 @ 2:45 pm - 3:45 pm Candle Crafting, Menorah Installation, and Hanukkah Puppet Play PlayWorks Create your own candle craft to add light to the Hanukkah season! Play with our puppet theatre with dreidel, menorah, and Hanukkah food puppets!",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/candle-crafting-menorah-installation-and-hanukkah-puppet-play/2026-12-09/",
+      "image": ""
+    },
+    {
+      "title": "Evergreen Exchange Ornaments",
+      "date": "2026-12-10",
+      "date_label": "Dec 10",
+      "time": "10:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "Evergreen Exchange Ornaments December 10 @ 10:30 am - 12:30 pm Evergreen Exchange Ornaments Makerspace Inspired by winter greenery and traditions of decorating, create a magical ornament filled with pinecones, bark textures, ribbons, and reflective materials.",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/evergreen-exchange-ornaments/2026-12-10/",
       "image": ""
     }
   ]
