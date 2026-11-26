@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T14:55:10-05:00",
+  "updated_at": "2026-11-25T23:08:07-05:00",
   "events": [
     {
       "title": "Thankful Pie Patch Placemats",
@@ -863,6 +863,38 @@
       "description": "Evergreen Exchange Ornaments December 10 @ 10:30 am - 12:30 pm Evergreen Exchange Ornaments Makerspace Inspired by winter greenery and traditions of decorating, create a magical ornament filled with pinecones, bark textures, ribbons, and reflective materials.",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/evergreen-exchange-ornaments/2026-12-10/",
+      "image": ""
+    },
+    {
+      "title": "Winter Metropolis",
+      "date": "2026-12-10",
+      "date_label": "Dec 10",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Science",
+      "price_type": "paid",
+      "description": "Winter Metropolis December 10 @ 2:00 pm - 4:15 pm Winter Metropolis Inside Art Join us as CMOM transforms into a sprawling winter city entirely created by you! Add to our collaborative installation, by designing glowing decorations, mini architectural sculptures, tiny transportation systems, and … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/winter-metropolis/2026-12-10/",
+      "image": ""
+    },
+    {
+      "title": "The Mitten by Jan Brett inspired Sensory Bin",
+      "date": "2026-12-10",
+      "date_label": "Dec 10",
+      "time": "2:45 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Other",
+      "price_type": "paid",
+      "description": "The Mitten by Jan Brett inspired Sensory Bin December 10 @ 2:45 pm - 3:45 pm The Mitten by Jan Brett inspired Sensory Bin PlayWorks Explore a small winter forest with your hands!",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/the-mitten-by-jan-brett-inspired-sensory-bin/2026-12-10/",
       "image": ""
     }
   ]
