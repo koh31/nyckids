@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T14:27:30-05:00",
+  "updated_at": "2026-11-27T22:53:11-05:00",
   "events": [
     {
       "title": "Performance: The Good Ms. Padgett and Friends!",
@@ -895,6 +895,38 @@
       "description": "The Mitten by Jan Brett inspired Sensory Bin December 12 @ 11:15 am - 12:15 pm The Mitten by Jan Brett inspired Sensory Bin PlayWorks Explore a small winter forest with your hands!",
       "source": "Children's Museum of Manhattan",
       "url": "https://cmom.org/event/the-mitten-by-jan-brett-inspired-sensory-bin/2026-12-12/1/",
+      "image": ""
+    },
+    {
+      "title": "Exploring The Magic Flute with the Metropolitan Opera",
+      "date": "2026-12-12",
+      "date_label": "Dec 12",
+      "time": "11:30 am",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Music",
+      "price_type": "paid",
+      "description": "Exploring The Magic Flute with the Metropolitan Opera December 12 @ 11:30 am - 12:15 pm Inside Art Join the Metropolitan Opera to explore Mozart’s The Magic Flute through hands-on activities, games, and more—including special performances by musicians from the Met’s Lindemann Young Artist Development Program. Designed for young … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/exploring-the-magic-flute-with-the-metropolitan-opera/",
+      "image": ""
+    },
+    {
+      "title": "Winter Metropolis",
+      "date": "2026-12-12",
+      "date_label": "Dec 12",
+      "time": "2:00 pm",
+      "area": "Manhattan",
+      "borough": "Manhattan",
+      "venue": "Children's Museum of Manhattan",
+      "age_group": "0-5",
+      "genre": "Science",
+      "price_type": "paid",
+      "description": "Winter Metropolis December 12 @ 2:00 pm - 4:15 pm Winter Metropolis Inside Art Join us as CMOM transforms into a sprawling winter city entirely created by you! Add to our collaborative installation, by designing glowing decorations, mini architectural sculptures, tiny transportation systems, and … Continued",
+      "source": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/event/winter-metropolis/2026-12-12/",
       "image": ""
     }
   ]
